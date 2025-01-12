@@ -1,5 +1,25 @@
 # Simple Apartment Renovation Planner
 
+# repo
+https://github.com/pleabargain/simple-apartment-reno
+
+# what
+
+I tried. I really did. But I couldn't get it to work. Too many errors. I used Anthropic and Cline. 
+
+# next steps
+
+I don't know. I'm frustrated and giving up for the time being.
+
+# learned
+- I had hoped that an instructions file would help keep Anthropic from going off the rails. But it didn't. I'm not sure what to do.
+- don't forget to fire up a server when working with local html files
+
+# next time
+try to use grad.io or something similar for the UI
+
+
+
 A web-based application for planning and managing apartment renovation projects. This application allows users to organize renovation plans room by room, including the kitchen, living room, bedrooms, and bathrooms.
 
 ## Getting Started
