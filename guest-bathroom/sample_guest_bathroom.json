@@ -1,0 +1,56 @@
+[
+  {
+    "type": "lighting",
+    "name": "Progress Lighting P2992",
+    "description": "2-Light Brushed Nickel Vanity Light",
+    "cost": "149",
+    "url": "https://example.com/vanity-light-guest",
+    "note": "Dimmable LED compatible",
+    "image_path": ""
+  },
+  {
+    "type": "lighting",
+    "name": "Hampton Bay 757930",
+    "description": "Recessed LED Light Kit (2-pack)",
+    "cost": "79",
+    "url": "https://example.com/recessed-light-guest",
+    "note": "Energy Star certified",
+    "image_path": ""
+  },
+  {
+    "type": "vanity",
+    "name": "Home Decorators Naples 36",
+    "description": "36-inch single vanity with marble top",
+    "cost": "899",
+    "url": "https://example.com/vanity-guest",
+    "note": "Includes soft-close door",
+    "image_path": ""
+  },
+  {
+    "type": "vanity",
+    "name": "Delta 2538LF",
+    "description": "Center-set faucet brushed nickel",
+    "cost": "179",
+    "url": "https://example.com/faucet-guest",
+    "note": "WaterSense certified",
+    "image_path": ""
+  },
+  {
+    "type": "storage",
+    "name": "Allen + Roth 1557VA",
+    "description": "Small linen cabinet - white",
+    "cost": "299",
+    "url": "https://example.com/linen-cabinet-guest",
+    "note": "Adjustable shelves",
+    "image_path": ""
+  },
+  {
+    "type": "storage",
+    "name": "Kohler K-99007",
+    "description": "Medicine cabinet with mirror 20-inch",
+    "cost": "249",
+    "url": "https://example.com/medicine-cabinet-guest",
+    "note": "Beveled mirror edges",
+    "image_path": ""
+  }
+]

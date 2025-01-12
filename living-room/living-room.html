@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living Room Renovation</title>
+    <style>
+        .gallery-section {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .gallery-image {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #eee;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Living Room Renovation</h1>
+    <a href="../index.html">Back to Home</a>
+
+    <!-- Error Console Button -->
+    <div style="background: #f8d7da; padding: 10px; margin: 10px 0;">
+        <button onclick="showErrorConsole()" style="background: #dc3545; color: white; padding: 5px 10px;">View Console Errors</button>
+        <span id="error-count" style="margin-left: 10px;">No errors</span>
+    </div>
+
+    <!-- Sample Data Loading -->
+    <section id="sample-data">
+        <button onclick="loadSampleData()">Load Sample Data</button>
+        <button onclick="saveWithDateStamp()">Save CSV with Date Stamp</button>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery-section" class="gallery-section">
+        <h2>Living Room Gallery</h2>
+        <div id="gallery-container"></div>
+    </section>
+
+    <!-- Chat Interface -->
+    <section id="chat-interface">
+        <h2>Chat with Renovation Assistant</h2>
+        <div id="chat-messages" style="height: 300px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;"></div>
+        <div id="chat-input">
+            <input type="text" id="user-message" placeholder="Ask about your living room renovation..." style="width: 80%;">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </section>
+
+    <!-- General Costs Section -->
+    <section id="general-costs">
+        <h2>General Costs</h2>
+        <div>
+            <label>Designer Cost:</label>
+            <input type="number" id="designer-cost" min="0" step="0.01" onchange="calculateTotal()">
+        </div>
+        <div>
+            <label>Demolition Cost:</label>
+            <input type="number" id="demolition-cost" min="0" step="0.01" onchange="calculateTotal()">
+        </div>
+        <div>
+            <label>Materials Cost:</label>
+            <input type="number" id="materials-cost" min="0" step="0.01" onchange="calculateTotal()">
+        </div>
+        <div>
+            <label>Labor Cost:</label>
+            <input type="number" id="labor-cost" min="0" step="0.01" onchange="calculateTotal()">
+        </div>
+    </section>
+
+    <!-- Dynamic Items Section -->
+    <section id="items-section">
+        <h2>Living Room Items</h2>
+        
+        <!-- Add New Item Form -->
+        <div id="add-item-form">
+            <select id="item-type">
+                <option value="painting">Painting</option>
+                <option value="lighting">Lighting</option>
+                <option value="ceiling-fan">Ceiling Fan</option>
+                <option value="window-treatments">Window Treatments</option>
+                <option value="flooring">Flooring</option>
+                <option value="furniture">Furniture</option>
+            </select>
+            <input type="text" id="item-name" placeholder="Name/Model">
+            <input type="text" id="item-description" placeholder="Description">
+            <input type="number" id="item-cost" placeholder="Cost" min="0" step="0.01">
+            <input type="url" id="item-url" placeholder="URL">
+            <input type="text" id="item-note" placeholder="Note">
+            <input type="file" id="item-image" accept="image/*">
+            <button onclick="addItem()">Add Item</button>
+        </div>
+
+        <!-- Items Display -->
+        <div id="items-list"></div>
+    </section>
+
+    <!-- Total Cost Display -->
+    <section id="total-cost">
+        <h2>Total Costs</h2>
+        <p>Items Total: $<span id="items-total">0.00</span></p>
+        <p>General Costs Total: $<span id="general-total">0.00</span></p>
+        <p>Grand Total: $<span id="grand-total">0.00</span></p>
+    </section>
+
+    <script>
+        // Global variables
+        let items = [];
+        const OLLAMA_API_URL = 'http://localhost:11434/api/generate';
+        let errorLog = [];
+        
+        // Error handling functions
+        function logError(operation, error, context = {}) {
+            const errorEntry = {
+                timestamp: new Date().toISOString(),
+                operation,
+                error: {
+                    message: error.message,
+                    stack: error.stack,
+                    name: error.name
+                },
+                context
+            };
+            errorLog.push(errorEntry);
+            console.error('Error logged:', errorEntry);
+            updateErrorCount();
+            
+            // Save to error.log file
+            const errorText = `${errorEntry.timestamp} [${operation}] ${error.message}\nStack: ${error.stack}\nContext: ${JSON.stringify(context)}\n\n`;
+            const blob = new Blob([errorText], { type: 'text/plain' });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = 'error.log';
+            a.click();
+            URL.revokeObjectURL(a.href);
+        }
+
+        function updateErrorCount() {
+            const count = errorLog.length;
+            const errorCountElement = document.getElementById('error-count');
+            errorCountElement.textContent = count === 0 ? 'No errors' : `${count} error${count === 1 ? '' : 's'}`;
+            errorCountElement.style.color = count === 0 ? 'green' : '#dc3545';
+        }
+
+        function showErrorConsole() {
+            console.clear();
+            console.log('=== Error Log ===');
+            errorLog.forEach((entry, index) => {
+                console.group(`Error ${index + 1}: ${entry.operation}`);
+                console.log('Timestamp:', entry.timestamp);
+                console.log('Operation:', entry.operation);
+                console.log('Error:', entry.error);
+                console.log('Context:', entry.context);
+                console.groupEnd();
+            });
+        }
+
+        // Validation functions
+        function validateItem(item) {
+            const errors = [];
+            if (!item.type) errors.push('Item type is required');
+            if (!item.name) errors.push('Item name is required');
+            if (typeof item.cost !== 'number' || isNaN(item.cost)) errors.push('Cost must be a valid number');
+            if (item.url && !isValidUrl(item.url)) errors.push('Invalid URL format');
+            return errors;
+        }
+
+        function isValidUrl(string) {
+            try {
+                new URL(string);
+                return true;
+            } catch (_) {
+                return false;
+            }
+        }
+
+        // Data sanitization
+        function sanitizeInput(input) {
+            if (typeof input !== 'string') return input;
+            return input
+                .replace(/[<>]/g, '') // Remove potential HTML tags
+                .trim();
+        }
+        
+        async function saveWithDateStamp() {
+            const date = new Date().toISOString().split('T')[0];
+            const filename = `MACHINE_MADE_LIVING_ROOM_${date}.csv`;
+            
+            // Convert items array to CSV format
+            const headers = ['type', 'name', 'description', 'cost', 'url', 'note', 'image_path'];
+            const csvContent = [
+                headers.join(','),
+                ...items.map(item => 
+                    `${item.type},${item.name},${item.description},${item.cost},${item.url || ''},${item.note || ''},${item.image_path || ''}`
+                )
+            ].join('\n');
+
+            // Create a Blob containing the CSV data
+            const blob = new Blob([csvContent], { type: 'text/csv' });
+            const url = URL.createObjectURL(blob);
+
+            // Create a link to download the CSV and trigger it
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        async function loadSampleData() {
+            try {
+                console.log('Attempting to load sample data...');
+                
+                // Create a file input element
+                const fileInput = document.createElement('input');
+                fileInput.type = 'file';
+                fileInput.accept = '.csv';
+                fileInput.style.display = 'none';
+                document.body.appendChild(fileInput);
+
+                // Trigger file selection programmatically
+                fileInput.click();
+
+                const csvText = await new Promise((resolve, reject) => {
+                    fileInput.onchange = async (e) => {
+                        const file = e.target.files[0];
+                        if (!file) {
+                            reject(new Error('No file selected'));
+                            return;
+                        }
+
+                        const reader = new FileReader();
+                        reader.onload = (e) => resolve(e.target.result);
+                        reader.onerror = (e) => reject(new Error('Error reading file'));
+                        reader.readAsText(file);
+                    };
+                });
+
+                // Clean up
+                document.body.removeChild(fileInput);
+                console.log('CSV data loaded:', csvText.substring(0, 100) + '...');
+                
+                if (!csvText.trim()) {
+                    throw new Error('CSV file is empty');
+                }
+
+                // Parse CSV and create items
+                const lines = csvText.trim().split('\n');
+                if (lines.length < 2) {
+                    throw new Error('CSV file must contain headers and at least one data row');
+                }
+
+                const headers = lines[0].split(',');
+                console.log('CSV headers:', headers);
+                
+                // Validate headers
+                const requiredHeaders = ['type', 'name', 'description', 'cost', 'url', 'note', 'image_path'];
+                const missingHeaders = requiredHeaders.filter(h => !headers.includes(h));
+                if (missingHeaders.length > 0) {
+                    throw new Error(`Missing required headers: ${missingHeaders.join(', ')}`);
+                }
+
+                // Clear existing items
+                items = [];
+                
+                // Parse each line starting from index 1 (skipping headers)
+                for(let i = 1; i < lines.length; i++) {
+                    const values = lines[i].split(',');
+                    if (values.length !== headers.length) {
+                        console.warn(`Line ${i + 1} has ${values.length} values, expected ${headers.length}`);
+                        continue;
+                    }
+
+                    const item = {
+                        id: Date.now() + i, // Unique ID for each item
+                        type: sanitizeInput(values[0]),
+                        name: sanitizeInput(values[1]),
+                        description: sanitizeInput(values[2]),
+                        cost: parseFloat(values[3]),
+                        url: sanitizeInput(values[4] || ''),
+                        note: sanitizeInput(values[5] || ''),
+                        image_path: sanitizeInput(values[6] || '')
+                    };
+
+                    // Validate item
+                    const validationErrors = validateItem(item);
+                    if (validationErrors.length > 0) {
+                        console.warn(`Validation errors for item on line ${i + 1}:`, validationErrors);
+                        continue;
+                    }
+
+                    items.push(item);
+                    console.log(`Processed item ${i}:`, item);
+                }
+                
+                console.log(`Successfully loaded ${items.length} items`);
+
+                // Update display and totals
+                displayItems();
+                calculateTotal();
+                
+                // Add confirmation message to chat
+                addChatMessage('System', `Successfully loaded ${items.length} items from sample data`);
+            } catch(error) {
+                const errorContext = {
+                    attemptedFile: 'sample_living_room.csv',
+                    timestamp: new Date().toISOString()
+                };
+                logError('loadSampleData', error, errorContext);
+                addChatMessage('System', `Error loading sample data: ${error.message}. Check console for details.`);
+                throw error; // Re-throw for upstream handling
+            }
+        }
+
+        async function sendMessage() {
+            const userInput = document.getElementById('user-message');
+            const message = userInput.value.trim();
+            
+            if (!message) return;
+            
+            // Add user message to chat
+            addChatMessage('You', message);
+            userInput.value = '';
+
+            // Prepare context from current items and costs
+            const context = {
+                items: items,
+                generalCosts: {
+                    designer: parseFloat(document.getElementById('designer-cost').value) || 0,
+                    demolition: parseFloat(document.getElementById('demolition-cost').value) || 0,
+                    materials: parseFloat(document.getElementById('materials-cost').value) || 0,
+                    labor: parseFloat(document.getElementById('labor-cost').value) || 0
+                }
+            };
+
+            try {
+                const response = await fetch(OLLAMA_API_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        model: 'llama2',
+                        prompt: `You are a living room renovation expert assistant. Here is the current living room renovation data:\n\n${JSON.stringify(context, null, 2)}\n\nUser question: ${message}\n\nProvide a helpful response about the living room renovation based on this data.`,
+                        stream: false
+                    })
+                });
+
+                const data = await response.json();
+                addChatMessage('Assistant', data.response);
+            } catch(error) {
+                const errorContext = {
+                    message: message,
+                    timestamp: new Date().toISOString()
+                };
+                logError('sendMessage', error, errorContext);
+                addChatMessage('System', 'Error processing your request. Check console for details.');
+            }
+        }
+
+        function addChatMessage(sender, message) {
+            const chatMessages = document.getElementById('chat-messages');
+            const messageDiv = document.createElement('div');
+            messageDiv.innerHTML = `<p><strong>${sender}:</strong> ${message}</p>`;
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        async function addItem() {
+            try {
+                const type = document.getElementById('item-type').value;
+                const name = document.getElementById('item-name').value;
+                const description = document.getElementById('item-description').value;
+                const cost = parseFloat(document.getElementById('item-cost').value) || 0;
+                const url = document.getElementById('item-url').value;
+                const note = document.getElementById('item-note').value;
+                const imageInput = document.getElementById('item-image');
+                
+                let image_path = '';
+                if (imageInput.files[0]) {
+                    const file = imageInput.files[0];
+                    const timestamp = Date.now();
+                    image_path = `images/${type}_${timestamp}_${file.name}`;
+                }
+                
+                const item = {
+                    id: Date.now(),
+                    type: sanitizeInput(type),
+                    name: sanitizeInput(name),
+                    description: sanitizeInput(description),
+                    cost,
+                    url: sanitizeInput(url),
+                    note: sanitizeInput(note),
+                    image_path
+                };
+
+                // Validate item
+                const validationErrors = validateItem(item);
+                if (validationErrors.length > 0) {
+                    throw new Error(`Validation errors: ${validationErrors.join(', ')}`);
+                }
+
+                items.push(item);
+                saveToCSV();
+                displayItems();
+                updateGallery();
+                calculateTotal();
+                
+                // Reset form
+                document.getElementById('item-name').value = '';
+                document.getElementById('item-description').value = '';
+                document.getElementById('item-cost').value = '';
+                document.getElementById('item-url').value = '';
+                document.getElementById('item-note').value = '';
+                document.getElementById('item-image').value = '';
+            } catch(error) {
+                const errorContext = {
+                    formData: {
+                        type: document.getElementById('item-type').value,
+                        name: document.getElementById('item-name').value,
+                        cost: document.getElementById('item-cost').value
+                    },
+                    timestamp: new Date().toISOString()
+                };
+                logError('addItem', error, errorContext);
+                alert(`Error adding item: ${error.message}`);
+            }
+        }
+
+        function deleteItem(id) {
+            try {
+                items = items.filter(item => item.id !== id);
+                saveToCSV();
+                displayItems();
+                calculateTotal();
+            } catch(error) {
+                const errorContext = {
+                    itemId: id,
+                    timestamp: new Date().toISOString()
+                };
+                logError('deleteItem', error, errorContext);
+                alert(`Error deleting item: ${error.message}`);
+            }
+        }
+
+        function editItem(id) {
+            try {
+                const item = items.find(item => item.id === id);
+                if (!item) throw new Error(`Item with id ${id} not found`);
+
+                document.getElementById('item-type').value = item.type;
+                document.getElementById('item-name').value = item.name;
+                document.getElementById('item-description').value = item.description;
+                document.getElementById('item-cost').value = item.cost;
+                document.getElementById('item-url').value = item.url || '';
+                document.getElementById('item-note').value = item.note || '';
+
+                // Remove the old item
+                deleteItem(id);
+            } catch(error) {
+                const errorContext = {
+                    itemId: id,
+                    timestamp: new Date().toISOString()
+                };
+                logError('editItem', error, errorContext);
+                alert(`Error editing item: ${error.message}`);
+            }
+        }
+
+        function updateGallery() {
+            try {
+                const container = document.getElementById('gallery-container');
+                container.innerHTML = '';
+
+                items.filter(item => item.image_path).forEach(item => {
+                    const imageDiv = document.createElement('div');
+                    imageDiv.className = 'gallery-image';
+                    imageDiv.innerHTML = `
+                        <img src="${item.image_path}" alt="${item.name}" style="max-width: 200px;">
+                        <p>${item.name}</p>
+                        <input type="text" value="${item.note || ''}" onchange="updateImageCaption(${item.id}, this.value)">
+                        <button onclick="deleteImage(${item.id})">Delete Image</button>
+                    `;
+                    container.appendChild(imageDiv);
+                });
+            } catch(error) {
+                const errorContext = {
+                    itemCount: items.length,
+                    timestamp: new Date().toISOString()
+                };
+                logError('updateGallery', error, errorContext);
+                console.error('Error updating gallery:', error);
+            }
+        }
+
+        function updateImageCaption(itemId, caption) {
+            try {
+                const item = items.find(item => item.id === itemId);
+                if (!item) throw new Error(`Item with id ${itemId} not found`);
+                
+                item.note = sanitizeInput(caption);
+                saveToCSV();
+            } catch(error) {
+                const errorContext = {
+                    itemId,
+                    caption,
+                    timestamp: new Date().toISOString()
+                };
+                logError('updateImageCaption', error, errorContext);
+                alert(`Error updating caption: ${error.message}`);
+            }
+        }
+
+        function deleteImage(itemId) {
+            try {
+                const item = items.find(item => item.id === itemId);
+                if (!item) throw new Error(`Item with id ${itemId} not found`);
+
+                item.image_path = '';
+                saveToCSV();
+                updateGallery();
+            } catch(error) {
+                const errorContext = {
+                    itemId,
+                    timestamp: new Date().toISOString()
+                };
+                logError('deleteImage', error, errorContext);
+                alert(`Error deleting image: ${error.message}`);
+            }
+        }
+
+        function displayItems() {
+            try {
+                const container = document.getElementById('items-list');
+                container.innerHTML = '';
+
+                // Group items by type
+                const groupedItems = {};
+                items.forEach(item => {
+                    if (!groupedItems[item.type]) {
+                        groupedItems[item.type] = [];
+                    }
+                    groupedItems[item.type].push(item);
+                });
+
+                // Display grouped items
+                for (const [type, typeItems] of Object.entries(groupedItems)) {
+                    const typeSection = document.createElement('div');
+                    const typeName = type.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+                    typeSection.innerHTML = `<h3>${typeName}s</h3>`;
+                    
+                    typeItems.forEach(item => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.innerHTML = `
+                            <p>Name: ${item.name}</p>
+                            <p>Description: ${item.description}</p>
+                            <p>Cost: $${item.cost.toFixed(2)}</p>
+                            <p>Note: ${item.note || ''}</p>
+                            ${item.url ? `<p>URL: <a href="${item.url}" target="_blank">${item.url}</a></p>` : ''}
+                            ${item.image_path ? `<img src="${item.image_path}" alt="${item.name}" style="max-width: 200px;">` : ''}
+                            <button onclick="editItem(${item.id})">Edit</button>
+                            <button onclick="deleteItem(${item.id})">Delete</button>
+                            <hr>
+                        `;
+                        typeSection.appendChild(itemDiv);
+                    });
+                    
+                    container.appendChild(typeSection);
+                }
+            } catch(error) {
+                const errorContext = {
+                    itemCount: items.length,
+                    timestamp: new Date().toISOString()
+                };
+                logError('displayItems', error, errorContext);
+                console.error('Error displaying items:', error);
+            }
+        }
+
+        function calculateTotal() {
+            try {
+                // Calculate items total
+                const itemsTotal = items.reduce((sum, item) => sum + item.cost, 0);
+                document.getElementById('items-total').textContent = itemsTotal.toFixed(2);
+
+                // Calculate general costs total
+                const designerCost = parseFloat(document.getElementById('designer-cost').value) || 0;
+                const demolitionCost = parseFloat(document.getElementById('demolition-cost').value) || 0;
+                const materialsCost = parseFloat(document.getElementById('materials-cost').value) || 0;
+                const laborCost = parseFloat(document.getElementById('labor-cost').value) || 0;
+                
+                const generalTotal = designerCost + demolitionCost + materialsCost + laborCost;
+                document.getElementById('general-total').textContent = generalTotal.toFixed(2);
+
+                // Calculate grand total
+                const grandTotal = itemsTotal + generalTotal;
+                document.getElementById('grand-total').textContent = grandTotal.toFixed(2);
+            } catch(error) {
+                const errorContext = {
+                    itemCount: items.length,
+                    timestamp: new Date().toISOString()
+                };
+                logError('calculateTotal', error, errorContext);
+                console.error('Error calculating totals:', error);
+            }
+        }
+
+        function saveToCSV() {
+            try {
+                // Convert items array to CSV format
+                const headers = ['type', 'name', 'description', 'cost', 'url', 'note', 'image_path'];
+                const csvContent = [
+                    headers.join(','),
+                    ...items.map(item => 
+                        `${item.type},${item.name},${item.description},${item.cost},${item.url || ''},${item.note || ''},${item.image_path || ''}`
+                    )
+                ].join('\n');
+
+                // Save to living_room.csv (working copy)
+                const blob = new Blob([csvContent], { type: 'text/csv' });
+                const url = URL.createObjectURL(blob);
+
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'living_room.csv';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+            } catch(error) {
+                const errorContext = {
+                    itemCount: items.length,
+                    timestamp: new Date().toISOString()
+                };
+                logError('saveToCSV', error, errorContext);
+                alert(`Error saving CSV: ${error.message}`);
+            }
+        }
+
+        // Initialize display
+        displayItems();
+        calculateTotal();
+    </script>
+</body>
+</html>

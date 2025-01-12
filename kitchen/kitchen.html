@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen Renovation</title>
+</head>
+<body>
+    <h1>Kitchen Renovation</h1>
+    <a href="../index.html">Back to Home</a>
+
+    <!-- Error Console Button -->
+    <div>
+        <button id="viewErrors" onclick="showErrors()">View Console Errors</button>
+        <span id="error-count">No errors</span>
+        <a href="error.log" download>Download Error Log</a>
+    </div>
+
+    <!-- Sample Data Loading -->
+    <section id="sample-data">
+        <button id="load-sample-btn">Load Sample Data</button>
+        <button id="save-date-btn">Save Data with Date Stamp</button>
+        <div id="loading-indicator" style="display: none;">Loading...</div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery-section">
+        <h2>Kitchen Gallery</h2>
+        <div id="gallery-container"></div>
+        <div id="image-upload">
+            <h3>Add Images</h3>
+            <input type="file" id="gallery-image" accept="image/*" multiple>
+            <button id="upload-images-btn">Upload Images</button>
+        </div>
+    </section>
+
+    <!-- Chat Interface -->
+    <section id="chat-interface">
+        <h2>Chat with Renovation Assistant</h2>
+        <div id="chat-messages" style="height: 300px; overflow-y: auto; border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;"></div>
+        <div id="chat-input">
+            <input type="text" id="user-message" placeholder="Ask about your kitchen renovation..." style="width: 80%;">
+            <button id="send-message-btn">Send</button>
+        </div>
+        <div id="chat-loading" style="display: none;">Assistant is thinking...</div>
+    </section>
+
+    <!-- General Costs Section -->
+    <section id="general-costs">
+        <h2>General Costs</h2>
+        <div>
+            <label>Designer Cost (AED):</label>
+            <input type="number" id="designer-cost" min="0" step="0.01">
+        </div>
+        <div>
+            <label>Demolition Cost (AED):</label>
+            <input type="number" id="demolition-cost" min="0" step="0.01">
+        </div>
+        <div>
+            <label>Materials Cost (AED):</label>
+            <input type="number" id="materials-cost" min="0" step="0.01">
+        </div>
+        <div>
+            <label>Labor Cost (AED):</label>
+            <input type="number" id="labor-cost" min="0" step="0.01">
+        </div>
+    </section>
+
+    <!-- Dynamic Items Section -->
+    <section id="items-section">
+        <h2>Kitchen Items</h2>
+        
+        <!-- Add New Item Form -->
+        <div id="add-item-form">
+            <select id="item-type">
+                <option value="countertop">Countertop</option>
+                <option value="dishwasher">Dishwasher</option>
+                <option value="sink">Sink</option>
+                <option value="faucet">Faucet</option>
+                <option value="oven">Oven</option>
+                <option value="range">Range</option>
+                <option value="refrigerator">Refrigerator</option>
+                <option value="microwave">Microwave</option>
+            </select>
+            <input type="text" id="item-name" placeholder="Name/Model">
+            <input type="text" id="item-description" placeholder="Description">
+            <input type="number" id="item-cost" placeholder="Cost (AED)" min="0" step="0.01">
+            <input type="url" id="item-url" placeholder="URL">
+            <input type="text" id="item-note" placeholder="Note">
+            <input type="file" id="item-image" accept="image/*">
+            <button id="add-item-btn" type="button">Add Item</button>
+        </div>
+
+        <!-- Items Display -->
+        <div id="items-container">
+            <!-- Item Type Sections -->
+            <div class="item-type-section" id="countertops-section">
+                <h3>Countertops</h3>
+                <div class="items-grid" id="countertop-items"></div>
+                <div class="item-comparison">
+                    <h4>Compare Selected Countertops</h4>
+                    <div id="countertop-comparison"></div>
+                </div>
+            </div>
+
+            <div class="item-type-section" id="dishwashers-section">
+                <h3>Dishwashers</h3>
+                <div class="items-grid" id="dishwasher-items"></div>
+                <div class="item-comparison">
+                    <h4>Compare Selected Dishwashers</h4>
+                    <div id="dishwasher-comparison"></div>
+                </div>
+            </div>
+
+            <div class="item-type-section" id="sinks-section">
+                <h3>Sinks</h3>
+                <div class="items-grid" id="sink-items"></div>
+                <div class="item-comparison">
+                    <h4>Compare Selected Sinks</h4>
+                    <div id="sink-comparison"></div>
+                </div>
+            </div>
+
+            <div class="item-type-section" id="faucets-section">
+                <h3>Faucets</h3>
+                <div class="items-grid" id="faucet-items"></div>
+                <div class="item-comparison">
+                    <h4>Compare Selected Faucets</h4>
+                    <div id="faucet-comparison"></div>
+                </div>
+            </div>
+
+            <div class="item-type-section" id="ovens-section">
+                <h3>Ovens</h3>
+                <div class="items-grid" id="oven-items"></div>
+                <div class="item-comparison">
+                    <h4>Compare Selected Ovens</h4>
+                    <div id="oven-comparison"></div>
+                </div>
+            </div>
+
+            <div class="item-type-section" id="ranges-section">
+                <h3>Ranges</h3>
+                <div class="items-grid" id="range-items"></div>
+                <div class="item-comparison">
+                    <h4>Compare Selected Ranges</h4>
+                    <div id="range-comparison"></div>
+                </div>
+            </div>
+
+            <div class="item-type-section" id="refrigerators-section">
+                <h3>Refrigerators</h3>
+                <div class="items-grid" id="refrigerator-items"></div>
+                <div class="item-comparison">
+                    <h4>Compare Selected Refrigerators</h4>
+                    <div id="refrigerator-comparison"></div>
+                </div>
+            </div>
+
+            <div class="item-type-section" id="microwaves-section">
+                <h3>Microwaves</h3>
+                <div class="items-grid" id="microwave-items"></div>
+                <div class="item-comparison">
+                    <h4>Compare Selected Microwaves</h4>
+                    <div id="microwave-comparison"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Total Cost Display -->
+    <section id="total-cost">
+        <h2>Total Costs</h2>
+        <p>Items Total: <span id="items-total">0.00</span> AED</p>
+        <p>General Costs Total: <span id="general-total">0.00</span> AED</p>
+        <p>Grand Total: <span id="grand-total">0.00</span> AED</p>
+        <button id="calculate-cost-btn">Recalculate Totals</button>
+    </section>
+
+    <!-- JavaScript imports -->
+    <script type="module" src="../js/errorHandling.js"></script>
+    <script type="module" src="../js/fileManagement.js"></script>
+    <script type="module" src="../js/itemManagement.js"></script>
+    <script type="module" src="../js/validation.js"></script>
+    <script type="module" src="../js/ollamaIntegration.js"></script>
+    <script type="module" src="../js/uiManager.js"></script>
+    <script type="module" src="../js/main.js"></script>
+
+    <style>
+        .items-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .item-card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .item-card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .item-card.selected {
+            border-color: #007bff;
+            background-color: #f8f9fa;
+        }
+
+        .item-comparison {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+        }
+
+        .gallery-image {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .gallery-image img {
+            max-width: 200px;
+            height: auto;
+        }
+
+        .chat-message {
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        .chat-message:nth-child(odd) {
+            background-color: #f8f9fa;
+        }
+
+        #loading-indicator, #chat-loading {
+            color: #666;
+            font-style: italic;
+        }
+
+        .error-message {
+            color: #dc3545;
+            background-color: #f8d7da;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+    </style>
+</body>
+</html>

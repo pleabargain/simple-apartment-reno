@@ -1,0 +1,9 @@
+type,name,description,cost,url,note,image_path
+painting,Benjamin Moore Regal,Premium interior paint - Dove White 15 gallons,450,https://example.com/paint,Low VOC formula,
+lighting,Hampton Bay Devron,52-inch LED ceiling light fixture,199,https://example.com/light,Dimmable LED,
+ceiling-fan,Hunter Cavera,52-inch indoor ceiling fan with light kit,299,https://example.com/fan,Remote controlled,
+window-treatments,Graber Cellular Shades,Custom light filtering shades for 3 windows,899,https://example.com/shades,Energy efficient,
+flooring,Shaw Engineered Hardwood,Red Oak Natural 500 sqft,3500,https://example.com/flooring,25-year warranty,
+furniture,Article Sven Sofa,Leather sectional sofa - Charme Tan,2799,https://example.com/sofa,Full grain leather,
+furniture,West Elm Coffee Table,Mid-century modern coffee table - Walnut,499,https://example.com/table,Solid wood construction,
+lighting,IKEA Floor Lamp,Ranarp floor reading lamp - Black,79,https://example.com/lamp,Adjustable arm,

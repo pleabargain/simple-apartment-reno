@@ -1,0 +1,56 @@
+[
+  {
+    "type": "lighting",
+    "name": "Progress Lighting P300046",
+    "description": "3-Light Brushed Nickel Vanity Light",
+    "cost": "199",
+    "url": "https://example.com/vanity-light",
+    "note": "Dimmable LED compatible",
+    "image_path": ""
+  },
+  {
+    "type": "lighting",
+    "name": "Hampton Bay 757937",
+    "description": "Recessed LED Light Kit (4-pack)",
+    "cost": "129",
+    "url": "https://example.com/recessed-light",
+    "note": "Energy Star certified",
+    "image_path": ""
+  },
+  {
+    "type": "vanity",
+    "name": "Home Decorators Sonoma 60",
+    "description": "60-inch double vanity with marble top",
+    "cost": "1299",
+    "url": "https://example.com/vanity",
+    "note": "Includes soft-close drawers",
+    "image_path": ""
+  },
+  {
+    "type": "vanity",
+    "name": "Delta 2551LF",
+    "description": "Widespread faucet brushed nickel",
+    "cost": "279",
+    "url": "https://example.com/faucet",
+    "note": "WaterSense certified",
+    "image_path": ""
+  },
+  {
+    "type": "storage",
+    "name": "Allen + Roth 1558VA",
+    "description": "Linen cabinet with hamper - white",
+    "cost": "399",
+    "url": "https://example.com/linen-cabinet",
+    "note": "Built-in hamper feature",
+    "image_path": ""
+  },
+  {
+    "type": "storage",
+    "name": "Kohler K-99011",
+    "description": "Medicine cabinet with mirror 24-inch",
+    "cost": "349",
+    "url": "https://example.com/medicine-cabinet",
+    "note": "Adjustable glass shelves",
+    "image_path": ""
+  }
+]

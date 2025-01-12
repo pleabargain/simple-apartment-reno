@@ -1,0 +1,74 @@
+[
+  {
+    "type": "painting",
+    "name": "Benjamin Moore Regal",
+    "description": "Premium interior paint - Dove White 15 gallons",
+    "cost": "450",
+    "url": "https://example.com/paint",
+    "note": "Low VOC formula",
+    "image_path": ""
+  },
+  {
+    "type": "lighting",
+    "name": "Hampton Bay Devron",
+    "description": "52-inch LED ceiling light fixture",
+    "cost": "199",
+    "url": "https://example.com/light",
+    "note": "Dimmable LED",
+    "image_path": ""
+  },
+  {
+    "type": "ceiling-fan",
+    "name": "Hunter Cavera",
+    "description": "52-inch indoor ceiling fan with light kit",
+    "cost": "299",
+    "url": "https://example.com/fan",
+    "note": "Remote controlled",
+    "image_path": ""
+  },
+  {
+    "type": "window-treatments",
+    "name": "Graber Cellular Shades",
+    "description": "Custom light filtering shades for 3 windows",
+    "cost": "899",
+    "url": "https://example.com/shades",
+    "note": "Energy efficient",
+    "image_path": ""
+  },
+  {
+    "type": "flooring",
+    "name": "Shaw Engineered Hardwood",
+    "description": "Red Oak Natural 500 sqft",
+    "cost": "3500",
+    "url": "https://example.com/flooring",
+    "note": "25-year warranty",
+    "image_path": ""
+  },
+  {
+    "type": "furniture",
+    "name": "Article Sven Sofa",
+    "description": "Leather sectional sofa - Charme Tan",
+    "cost": "2799",
+    "url": "https://example.com/sofa",
+    "note": "Full grain leather",
+    "image_path": ""
+  },
+  {
+    "type": "furniture",
+    "name": "West Elm Coffee Table",
+    "description": "Mid-century modern coffee table - Walnut",
+    "cost": "499",
+    "url": "https://example.com/table",
+    "note": "Solid wood construction",
+    "image_path": ""
+  },
+  {
+    "type": "lighting",
+    "name": "IKEA Floor Lamp",
+    "description": "Ranarp floor reading lamp - Black",
+    "cost": "79",
+    "url": "https://example.com/lamp",
+    "note": "Adjustable arm",
+    "image_path": ""
+  }
+]

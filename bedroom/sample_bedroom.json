@@ -1,0 +1,56 @@
+[
+  {
+    "type": "painting",
+    "name": "Benjamin Moore Aura",
+    "description": "Premium interior paint - Calm Gray 10 gallons",
+    "cost": "350",
+    "url": "https://example.com/paint-bedroom",
+    "note": "Zero VOC formula",
+    "image_path": ""
+  },
+  {
+    "type": "painting",
+    "name": "Purdy XL-Dale",
+    "description": "Professional brush and roller set",
+    "cost": "75",
+    "url": "https://example.com/paint-tools",
+    "note": "Professional grade tools",
+    "image_path": ""
+  },
+  {
+    "type": "lighting",
+    "name": "Hunter Builder Plus",
+    "description": "52-inch ceiling fan with light kit",
+    "cost": "199",
+    "url": "https://example.com/fan-bedroom",
+    "note": "Remote controlled",
+    "image_path": ""
+  },
+  {
+    "type": "lighting",
+    "name": "Pottery Barn Ellis",
+    "description": "Table lamp set of 2 - Bronze finish",
+    "cost": "299",
+    "url": "https://example.com/lamps",
+    "note": "Dimmable LED compatible",
+    "image_path": ""
+  },
+  {
+    "type": "curtains",
+    "name": "Pottery Barn Velvet",
+    "description": "Blackout curtains 108-inch - Slate (2 panels)",
+    "cost": "249",
+    "url": "https://example.com/curtains",
+    "note": "99% light blocking",
+    "image_path": ""
+  },
+  {
+    "type": "curtains",
+    "name": "West Elm Rod Set",
+    "description": "Adjustable curtain rod with finials - Bronze",
+    "cost": "89",
+    "url": "https://example.com/curtain-rod",
+    "note": "Extends 48-88 inches",
+    "image_path": ""
+  }
+]

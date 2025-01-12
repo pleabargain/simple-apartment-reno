@@ -1,0 +1,83 @@
+[
+    {
+        "type": "countertop",
+        "name": "Granite Countertop - Luna Pearl",
+        "description": "Premium quality granite countertop with natural patterns",
+        "cost": 5000.00,
+        "url": "https://example.com/granite-luna-pearl",
+        "note": "Includes installation and sealing",
+        "image_path": "kitchen/images/countertop_luna_pearl.jpg"
+    },
+    {
+        "type": "countertop",
+        "name": "Quartz Countertop - Calacatta Gold",
+        "description": "Engineered quartz with marble-like appearance",
+        "cost": 6500.00,
+        "url": "https://example.com/quartz-calacatta",
+        "note": "Stain resistant and low maintenance",
+        "image_path": "kitchen/images/countertop_calacatta.jpg"
+    },
+    {
+        "type": "dishwasher",
+        "name": "Bosch 800 Series",
+        "description": "Premium dishwasher with ultra-quiet operation",
+        "cost": 3500.00,
+        "url": "https://example.com/bosch-800",
+        "note": "Energy Star certified",
+        "image_path": "kitchen/images/dishwasher_bosch.jpg"
+    },
+    {
+        "type": "sink",
+        "name": "Kraus Undermount Double Bowl",
+        "description": "33-inch stainless steel sink",
+        "cost": 1200.00,
+        "url": "https://example.com/kraus-sink",
+        "note": "Includes mounting hardware",
+        "image_path": "kitchen/images/sink_kraus.jpg"
+    },
+    {
+        "type": "faucet",
+        "name": "Delta Touch2O",
+        "description": "Touch-activated kitchen faucet with pull-down sprayer",
+        "cost": 800.00,
+        "url": "https://example.com/delta-touch2o",
+        "note": "Voice control compatible",
+        "image_path": "kitchen/images/faucet_delta.jpg"
+    },
+    {
+        "type": "oven",
+        "name": "Wolf E Series Built-In",
+        "description": "Professional grade built-in wall oven",
+        "cost": 8000.00,
+        "url": "https://example.com/wolf-oven",
+        "note": "Dual convection system",
+        "image_path": "kitchen/images/oven_wolf.jpg"
+    },
+    {
+        "type": "range",
+        "name": "Viking Professional 5 Series",
+        "description": "48-inch gas range with griddle",
+        "cost": 12000.00,
+        "url": "https://example.com/viking-range",
+        "note": "Includes propane conversion kit",
+        "image_path": "kitchen/images/range_viking.jpg"
+    },
+    {
+        "type": "refrigerator",
+        "name": "Sub-Zero Classic Series",
+        "description": "Built-in refrigerator with dual cooling",
+        "cost": 15000.00,
+        "url": "https://example.com/subzero-fridge",
+        "note": "Includes water filter",
+        "image_path": "kitchen/images/refrigerator_subzero.jpg"
+    },
+    {
+        "type": "microwave",
+        "name": "Miele Built-In",
+        "description": "Speed oven with convection capabilities",
+        "cost": 2500.00,
+        "url": "https://example.com/miele-microwave",
+        "note": "Includes trim kit",
+        "image_path": "kitchen/images/microwave_miele.jpg"
+    }
+]

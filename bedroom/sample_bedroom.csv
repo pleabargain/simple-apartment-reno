@@ -1,0 +1,7 @@
+type,name,description,cost,url,note,image_path
+painting,Benjamin Moore Aura,Premium interior paint - Calm Gray 10 gallons,350,https://example.com/paint-bedroom,Zero VOC formula,
+painting,Purdy XL-Dale,Professional brush and roller set,75,https://example.com/paint-tools,Professional grade tools,
+lighting,Hunter Builder Plus,52-inch ceiling fan with light kit,199,https://example.com/fan-bedroom,Remote controlled,
+lighting,Pottery Barn Ellis,Table lamp set of 2 - Bronze finish,299,https://example.com/lamps,Dimmable LED compatible,
+curtains,Pottery Barn Velvet,Blackout curtains 108-inch - Slate (2 panels),249,https://example.com/curtains,99% light blocking,
+curtains,West Elm Rod Set,Adjustable curtain rod with finials - Bronze,89,https://example.com/curtain-rod,Extends 48-88 inches,

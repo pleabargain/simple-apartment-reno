@@ -1,0 +1,391 @@
+2025-01-12T09:34:20.521Z [loadSampleData] Missing required headers: type, name, description, cost, url, note, image_path
+Stack: Error: Missing required headers: type, name, description, cost, url, note, image_path
+    at loadSampleData (file:///C:/Users/denni/Documents/simple%20apartment%20reno/living-room/living-room.html:267:27)
+Context: {"attemptedFile":"sample_living_room.csv","timestamp":"2025-01-12T09:34:20.521Z"}
+
+
+=== Server Info ===
+Timestamp: 2025-01-12T13:57:48.783603
+Client: 127.0.0.1
+Path: /api/log-error
+Headers: {'Host': 'localhost:8000', 'Connection': 'keep-alive', 'Content-Length': '352', 'sec-ch-ua-platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"', 'DNT': '1', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryOVskSSsx7YaGJIIU', 'sec-ch-ua-mobile': '?0', 'Accept': '*/*', 'Origin': 'http://localhost:8000', 'Sec-Fetch-Site': 'same-origin', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:8000/kitchen/kitchen.html', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9', 'Cookie': 'ajs_anonymous_id=55423e57-37ba-47d7-acd5-01f110aacf19; rl_page_init_referrer=RudderEncrypt%3AU2FsdGVkX18zYEaLyV6RWj9CczJTEx2hC6fCPUwpMU8%3D; rl_page_init_referring_domain=RudderEncrypt%3AU2FsdGVkX1%2BaNpw%2F0SBsF%2B%2BRlIfSgSpNjcjYD%2BT1xaQ%3D; n8n-auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImJmZGQwMTI3LTU4ZmItNDE1Ny05MWFiLTRjNTI0OGFhMjcyZSIsImhhc2giOiJ6ZWFkMFZGeVBWIiwiYnJvd3NlcklkIjoialBBZUJjWUJ0ZTljUFFzTDJ5ZmNnV0tOL0NTTFlRUkNBTGNxek81TSswZz0iLCJpYXQiOjE3MzYzMTk2OTQsImV4cCI6MTczNjkyNDQ5NH0.OdMRRZuzDkXK_Aeolyd3AirfP51ufdDiXkWZItIuxlA; rl_anonymous_id=RudderEncrypt%3AU2FsdGVkX1%2BlCSBgNyJNfin4LsW25p5G%2Fn5uks%2FqszAG82Ph6CtQ3z3wr93ZwqGHlmBJZWqcBl4TMAeaVT7bGA%3D%3D; rl_user_id=RudderEncrypt%3AU2FsdGVkX1%2B%2Bjnm8mMNnf5qtLW7BjN351DgI%2BU1oEC%2BPgollpnYVtxiJeaUFBUqRcQtYifCyy5P1mfYvtQWCtTTISQI%2F22dFYficlhXriZCyufUKUNfXq7eFrJyZgf7h5EXEUdM7XQgEaT9gCb5BXQBanFOFHQcN7jMBBkTQhDw%3D; rl_trait=RudderEncrypt%3AU2FsdGVkX18rLv4cMHGVPi3HGFcwFR%2BhhX8zGnLIQhUEle%2Bz5M%2BVF6AnhhAsqMW1HXCURcaZNLQlF4XC3ls9HaDermIjRIxbfkHwYMJH13XN03opdQhsMq%2BQmUbEmXbBDFVW5k0oz1kpJguzMBeaLg%3D%3D; rl_session=RudderEncrypt%3AU2FsdGVkX1%2FH0GK5vZuTHfMPiB5Ont6649jpqkIGz1nYC99v5h7ZU4qnvBXU19qUHL32ZGwhoMzSAJpMD8VTreHM6X%2B1qFm2MtBa80r3K0VGzDq%2FxPPW4F%2BAN%2BRUxhfozrz2chDqvAWv6pCqlt710Q%3D%3D; ph_phc_4URIAm1uYfJO7j8kWSe0J8lc8IqnstRLS7Jx8NcakHo_posthog=%7B%22distinct_id%22%3A%22484cb91abc553eb0728fba27350d2547e4f79f2e843d0e1c5526197d70397c0a%23bfdd0127-58fb-4157-91ab-4c5248aa272e%22%2C%22%24sesid%22%3A%5B1736321172669%2C%22019444b7-fe5e-7eee-8627-ac22f265f710%22%2C1736319696477%5D%2C%22%24epp%22%3Atrue%2C%22%24initial_person_info%22%3A%7B%22r%22%3A%22%24direct%22%2C%22u%22%3A%22http%3A%2F%2Flocalhost%3A5678%2Fhome%2Fworkflows%22%7D%7D; _streamlit_xsrf=2|c6de634e|9ffd4b3613496bb8eaaa905137daa690|1731648966'}
+=== Error Details ===
+2025-01-12T09:57:48.469Z [USER_ACTION:file_input] User Interaction
+Stack: 
+Context: {"inputId":"gallery-image","fileName":"20241117_111927.jpg","fileType":"image/jpeg","timestamp":"2025-01-12T09:57:48.469Z"}
+
+
+==================================================
+
+
+=== Server Info ===
+Timestamp: 2025-01-12T13:57:50.939414
+Client: 127.0.0.1
+Path: /api/log-error
+Headers: {'Host': 'localhost:8000', 'Connection': 'keep-alive', 'Content-Length': '353', 'sec-ch-ua-platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"', 'DNT': '1', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryfsUp1jk625RBj7vT', 'sec-ch-ua-mobile': '?0', 'Accept': '*/*', 'Origin': 'http://localhost:8000', 'Sec-Fetch-Site': 'same-origin', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:8000/kitchen/kitchen.html', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9', 'Cookie': 'ajs_anonymous_id=55423e57-37ba-47d7-acd5-01f110aacf19; rl_page_init_referrer=RudderEncrypt%3AU2FsdGVkX18zYEaLyV6RWj9CczJTEx2hC6fCPUwpMU8%3D; rl_page_init_referring_domain=RudderEncrypt%3AU2FsdGVkX1%2BaNpw%2F0SBsF%2B%2BRlIfSgSpNjcjYD%2BT1xaQ%3D; n8n-auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImJmZGQwMTI3LTU4ZmItNDE1Ny05MWFiLTRjNTI0OGFhMjcyZSIsImhhc2giOiJ6ZWFkMFZGeVBWIiwiYnJvd3NlcklkIjoialBBZUJjWUJ0ZTljUFFzTDJ5ZmNnV0tOL0NTTFlRUkNBTGNxek81TSswZz0iLCJpYXQiOjE3MzYzMTk2OTQsImV4cCI6MTczNjkyNDQ5NH0.OdMRRZuzDkXK_Aeolyd3AirfP51ufdDiXkWZItIuxlA; rl_anonymous_id=RudderEncrypt%3AU2FsdGVkX1%2BlCSBgNyJNfin4LsW25p5G%2Fn5uks%2FqszAG82Ph6CtQ3z3wr93ZwqGHlmBJZWqcBl4TMAeaVT7bGA%3D%3D; rl_user_id=RudderEncrypt%3AU2FsdGVkX1%2B%2Bjnm8mMNnf5qtLW7BjN351DgI%2BU1oEC%2BPgollpnYVtxiJeaUFBUqRcQtYifCyy5P1mfYvtQWCtTTISQI%2F22dFYficlhXriZCyufUKUNfXq7eFrJyZgf7h5EXEUdM7XQgEaT9gCb5BXQBanFOFHQcN7jMBBkTQhDw%3D; rl_trait=RudderEncrypt%3AU2FsdGVkX18rLv4cMHGVPi3HGFcwFR%2BhhX8zGnLIQhUEle%2Bz5M%2BVF6AnhhAsqMW1HXCURcaZNLQlF4XC3ls9HaDermIjRIxbfkHwYMJH13XN03opdQhsMq%2BQmUbEmXbBDFVW5k0oz1kpJguzMBeaLg%3D%3D; rl_session=RudderEncrypt%3AU2FsdGVkX1%2FH0GK5vZuTHfMPiB5Ont6649jpqkIGz1nYC99v5h7ZU4qnvBXU19qUHL32ZGwhoMzSAJpMD8VTreHM6X%2B1qFm2MtBa80r3K0VGzDq%2FxPPW4F%2BAN%2BRUxhfozrz2chDqvAWv6pCqlt710Q%3D%3D; ph_phc_4URIAm1uYfJO7j8kWSe0J8lc8IqnstRLS7Jx8NcakHo_posthog=%7B%22distinct_id%22%3A%22484cb91abc553eb0728fba27350d2547e4f79f2e843d0e1c5526197d70397c0a%23bfdd0127-58fb-4157-91ab-4c5248aa272e%22%2C%22%24sesid%22%3A%5B1736321172669%2C%22019444b7-fe5e-7eee-8627-ac22f265f710%22%2C1736319696477%5D%2C%22%24epp%22%3Atrue%2C%22%24initial_person_info%22%3A%7B%22r%22%3A%22%24direct%22%2C%22u%22%3A%22http%3A%2F%2Flocalhost%3A5678%2Fhome%2Fworkflows%22%7D%7D; _streamlit_xsrf=2|c6de634e|9ffd4b3613496bb8eaaa905137daa690|1731648966'}
+=== Error Details ===
+2025-01-12T09:57:50.937Z [USER_ACTION:button_click] User Interaction
+Stack: 
+Context: {"buttonText":"Upload Images","buttonId":"upload-images-btn","buttonType":"submit","timestamp":"2025-01-12T09:57:50.937Z"}
+
+
+==================================================
+
+
+=== Server Info ===
+Timestamp: 2025-01-12T13:58:16.787223
+Client: 127.0.0.1
+Path: /api/log-error
+Headers: {'Host': 'localhost:8000', 'Connection': 'keep-alive', 'Content-Length': '353', 'sec-ch-ua-platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"', 'DNT': '1', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryrFOHMdx0TTWLy39m', 'sec-ch-ua-mobile': '?0', 'Accept': '*/*', 'Origin': 'http://localhost:8000', 'Sec-Fetch-Site': 'same-origin', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:8000/kitchen/kitchen.html', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9', 'Cookie': 'ajs_anonymous_id=55423e57-37ba-47d7-acd5-01f110aacf19; rl_page_init_referrer=RudderEncrypt%3AU2FsdGVkX18zYEaLyV6RWj9CczJTEx2hC6fCPUwpMU8%3D; rl_page_init_referring_domain=RudderEncrypt%3AU2FsdGVkX1%2BaNpw%2F0SBsF%2B%2BRlIfSgSpNjcjYD%2BT1xaQ%3D; n8n-auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImJmZGQwMTI3LTU4ZmItNDE1Ny05MWFiLTRjNTI0OGFhMjcyZSIsImhhc2giOiJ6ZWFkMFZGeVBWIiwiYnJvd3NlcklkIjoialBBZUJjWUJ0ZTljUFFzTDJ5ZmNnV0tOL0NTTFlRUkNBTGNxek81TSswZz0iLCJpYXQiOjE3MzYzMTk2OTQsImV4cCI6MTczNjkyNDQ5NH0.OdMRRZuzDkXK_Aeolyd3AirfP51ufdDiXkWZItIuxlA; rl_anonymous_id=RudderEncrypt%3AU2FsdGVkX1%2BlCSBgNyJNfin4LsW25p5G%2Fn5uks%2FqszAG82Ph6CtQ3z3wr93ZwqGHlmBJZWqcBl4TMAeaVT7bGA%3D%3D; rl_user_id=RudderEncrypt%3AU2FsdGVkX1%2B%2Bjnm8mMNnf5qtLW7BjN351DgI%2BU1oEC%2BPgollpnYVtxiJeaUFBUqRcQtYifCyy5P1mfYvtQWCtTTISQI%2F22dFYficlhXriZCyufUKUNfXq7eFrJyZgf7h5EXEUdM7XQgEaT9gCb5BXQBanFOFHQcN7jMBBkTQhDw%3D; rl_trait=RudderEncrypt%3AU2FsdGVkX18rLv4cMHGVPi3HGFcwFR%2BhhX8zGnLIQhUEle%2Bz5M%2BVF6AnhhAsqMW1HXCURcaZNLQlF4XC3ls9HaDermIjRIxbfkHwYMJH13XN03opdQhsMq%2BQmUbEmXbBDFVW5k0oz1kpJguzMBeaLg%3D%3D; rl_session=RudderEncrypt%3AU2FsdGVkX1%2FH0GK5vZuTHfMPiB5Ont6649jpqkIGz1nYC99v5h7ZU4qnvBXU19qUHL32ZGwhoMzSAJpMD8VTreHM6X%2B1qFm2MtBa80r3K0VGzDq%2FxPPW4F%2BAN%2BRUxhfozrz2chDqvAWv6pCqlt710Q%3D%3D; ph_phc_4URIAm1uYfJO7j8kWSe0J8lc8IqnstRLS7Jx8NcakHo_posthog=%7B%22distinct_id%22%3A%22484cb91abc553eb0728fba27350d2547e4f79f2e843d0e1c5526197d70397c0a%23bfdd0127-58fb-4157-91ab-4c5248aa272e%22%2C%22%24sesid%22%3A%5B1736321172669%2C%22019444b7-fe5e-7eee-8627-ac22f265f710%22%2C1736319696477%5D%2C%22%24epp%22%3Atrue%2C%22%24initial_person_info%22%3A%7B%22r%22%3A%22%24direct%22%2C%22u%22%3A%22http%3A%2F%2Flocalhost%3A5678%2Fhome%2Fworkflows%22%7D%7D; _streamlit_xsrf=2|c6de634e|9ffd4b3613496bb8eaaa905137daa690|1731648966'}
+=== Error Details ===
+2025-01-12T09:58:16.483Z [USER_ACTION:button_click] User Interaction
+Stack: 
+Context: {"buttonText":"Upload Images","buttonId":"upload-images-btn","buttonType":"submit","timestamp":"2025-01-12T09:58:16.483Z"}
+
+
+==================================================
+
+
+=== Server Info ===
+Timestamp: 2025-01-12T13:58:28.281349
+Client: 127.0.0.1
+Path: /api/log-error
+Headers: {'Host': 'localhost:8000', 'Connection': 'keep-alive', 'Content-Length': '353', 'sec-ch-ua-platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"', 'DNT': '1', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryWPVwdZCGUaILIqsi', 'sec-ch-ua-mobile': '?0', 'Accept': '*/*', 'Origin': 'http://localhost:8000', 'Sec-Fetch-Site': 'same-origin', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:8000/kitchen/kitchen.html', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9', 'Cookie': 'ajs_anonymous_id=55423e57-37ba-47d7-acd5-01f110aacf19; rl_page_init_referrer=RudderEncrypt%3AU2FsdGVkX18zYEaLyV6RWj9CczJTEx2hC6fCPUwpMU8%3D; rl_page_init_referring_domain=RudderEncrypt%3AU2FsdGVkX1%2BaNpw%2F0SBsF%2B%2BRlIfSgSpNjcjYD%2BT1xaQ%3D; n8n-auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImJmZGQwMTI3LTU4ZmItNDE1Ny05MWFiLTRjNTI0OGFhMjcyZSIsImhhc2giOiJ6ZWFkMFZGeVBWIiwiYnJvd3NlcklkIjoialBBZUJjWUJ0ZTljUFFzTDJ5ZmNnV0tOL0NTTFlRUkNBTGNxek81TSswZz0iLCJpYXQiOjE3MzYzMTk2OTQsImV4cCI6MTczNjkyNDQ5NH0.OdMRRZuzDkXK_Aeolyd3AirfP51ufdDiXkWZItIuxlA; rl_anonymous_id=RudderEncrypt%3AU2FsdGVkX1%2BlCSBgNyJNfin4LsW25p5G%2Fn5uks%2FqszAG82Ph6CtQ3z3wr93ZwqGHlmBJZWqcBl4TMAeaVT7bGA%3D%3D; rl_user_id=RudderEncrypt%3AU2FsdGVkX1%2B%2Bjnm8mMNnf5qtLW7BjN351DgI%2BU1oEC%2BPgollpnYVtxiJeaUFBUqRcQtYifCyy5P1mfYvtQWCtTTISQI%2F22dFYficlhXriZCyufUKUNfXq7eFrJyZgf7h5EXEUdM7XQgEaT9gCb5BXQBanFOFHQcN7jMBBkTQhDw%3D; rl_trait=RudderEncrypt%3AU2FsdGVkX18rLv4cMHGVPi3HGFcwFR%2BhhX8zGnLIQhUEle%2Bz5M%2BVF6AnhhAsqMW1HXCURcaZNLQlF4XC3ls9HaDermIjRIxbfkHwYMJH13XN03opdQhsMq%2BQmUbEmXbBDFVW5k0oz1kpJguzMBeaLg%3D%3D; rl_session=RudderEncrypt%3AU2FsdGVkX1%2FH0GK5vZuTHfMPiB5Ont6649jpqkIGz1nYC99v5h7ZU4qnvBXU19qUHL32ZGwhoMzSAJpMD8VTreHM6X%2B1qFm2MtBa80r3K0VGzDq%2FxPPW4F%2BAN%2BRUxhfozrz2chDqvAWv6pCqlt710Q%3D%3D; ph_phc_4URIAm1uYfJO7j8kWSe0J8lc8IqnstRLS7Jx8NcakHo_posthog=%7B%22distinct_id%22%3A%22484cb91abc553eb0728fba27350d2547e4f79f2e843d0e1c5526197d70397c0a%23bfdd0127-58fb-4157-91ab-4c5248aa272e%22%2C%22%24sesid%22%3A%5B1736321172669%2C%22019444b7-fe5e-7eee-8627-ac22f265f710%22%2C1736319696477%5D%2C%22%24epp%22%3Atrue%2C%22%24initial_person_info%22%3A%7B%22r%22%3A%22%24direct%22%2C%22u%22%3A%22http%3A%2F%2Flocalhost%3A5678%2Fhome%2Fworkflows%22%7D%7D; _streamlit_xsrf=2|c6de634e|9ffd4b3613496bb8eaaa905137daa690|1731648966'}
+=== Error Details ===
+2025-01-12T09:58:28.279Z [USER_ACTION:button_click] User Interaction
+Stack: 
+Context: {"buttonText":"Upload Images","buttonId":"upload-images-btn","buttonType":"submit","timestamp":"2025-01-12T09:58:28.279Z"}
+
+
+==================================================
+
+
+=== Server Info ===
+Timestamp: 2025-01-12T14:02:34.236236
+Client: 127.0.0.1
+Path: /api/log-error
+Headers: {'Host': 'localhost:8000', 'Connection': 'keep-alive', 'Content-Length': '452', 'sec-ch-ua-platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"', 'DNT': '1', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryUDqBJlpnVoMEHYWr', 'sec-ch-ua-mobile': '?0', 'Accept': '*/*', 'Origin': 'http://localhost:8000', 'Sec-Fetch-Site': 'same-origin', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:8000/kitchen/kitchen.html', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9', 'Cookie': 'ajs_anonymous_id=55423e57-37ba-47d7-acd5-01f110aacf19; rl_page_init_referrer=RudderEncrypt%3AU2FsdGVkX18zYEaLyV6RWj9CczJTEx2hC6fCPUwpMU8%3D; rl_page_init_referring_domain=RudderEncrypt%3AU2FsdGVkX1%2BaNpw%2F0SBsF%2B%2BRlIfSgSpNjcjYD%2BT1xaQ%3D; n8n-auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImJmZGQwMTI3LTU4ZmItNDE1Ny05MWFiLTRjNTI0OGFhMjcyZSIsImhhc2giOiJ6ZWFkMFZGeVBWIiwiYnJvd3NlcklkIjoialBBZUJjWUJ0ZTljUFFzTDJ5ZmNnV0tOL0NTTFlRUkNBTGNxek81TSswZz0iLCJpYXQiOjE3MzYzMTk2OTQsImV4cCI6MTczNjkyNDQ5NH0.OdMRRZuzDkXK_Aeolyd3AirfP51ufdDiXkWZItIuxlA; rl_anonymous_id=RudderEncrypt%3AU2FsdGVkX1%2BlCSBgNyJNfin4LsW25p5G%2Fn5uks%2FqszAG82Ph6CtQ3z3wr93ZwqGHlmBJZWqcBl4TMAeaVT7bGA%3D%3D; rl_user_id=RudderEncrypt%3AU2FsdGVkX1%2B%2Bjnm8mMNnf5qtLW7BjN351DgI%2BU1oEC%2BPgollpnYVtxiJeaUFBUqRcQtYifCyy5P1mfYvtQWCtTTISQI%2F22dFYficlhXriZCyufUKUNfXq7eFrJyZgf7h5EXEUdM7XQgEaT9gCb5BXQBanFOFHQcN7jMBBkTQhDw%3D; rl_trait=RudderEncrypt%3AU2FsdGVkX18rLv4cMHGVPi3HGFcwFR%2BhhX8zGnLIQhUEle%2Bz5M%2BVF6AnhhAsqMW1HXCURcaZNLQlF4XC3ls9HaDermIjRIxbfkHwYMJH13XN03opdQhsMq%2BQmUbEmXbBDFVW5k0oz1kpJguzMBeaLg%3D%3D; rl_session=RudderEncrypt%3AU2FsdGVkX1%2FH0GK5vZuTHfMPiB5Ont6649jpqkIGz1nYC99v5h7ZU4qnvBXU19qUHL32ZGwhoMzSAJpMD8VTreHM6X%2B1qFm2MtBa80r3K0VGzDq%2FxPPW4F%2BAN%2BRUxhfozrz2chDqvAWv6pCqlt710Q%3D%3D; ph_phc_4URIAm1uYfJO7j8kWSe0J8lc8IqnstRLS7Jx8NcakHo_posthog=%7B%22distinct_id%22%3A%22484cb91abc553eb0728fba27350d2547e4f79f2e843d0e1c5526197d70397c0a%23bfdd0127-58fb-4157-91ab-4c5248aa272e%22%2C%22%24sesid%22%3A%5B1736321172669%2C%22019444b7-fe5e-7eee-8627-ac22f265f710%22%2C1736319696477%5D%2C%22%24epp%22%3Atrue%2C%22%24initial_person_info%22%3A%7B%22r%22%3A%22%24direct%22%2C%22u%22%3A%22http%3A%2F%2Flocalhost%3A5678%2Fhome%2Fworkflows%22%7D%7D; _streamlit_xsrf=2|c6de634e|9ffd4b3613496bb8eaaa905137daa690|1731648966'}
+=== Error Details ===
+2025-01-12T10:02:33.925Z [handleChatMessage] context is not defined
+Stack: ReferenceError: context is not defined
+    at OllamaIntegration.sendMessage (http://localhost:8000/js/ollamaIntegration.js:112:68)
+    at async UIManager.handleChatMessage (http://localhost:8000/js/uiManager.js:189:30)
+Context: {}
+
+
+==================================================
+
+
+=== Server Info ===
+Timestamp: 2025-01-12T14:06:06.813783
+Client: 127.0.0.1
+Path: /api/log-error
+Headers: {'Host': 'localhost:8000', 'Connection': 'keep-alive', 'Content-Length': '352', 'sec-ch-ua-platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"', 'DNT': '1', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryCgqjjNBMsK6mt7L0', 'sec-ch-ua-mobile': '?0', 'Accept': '*/*', 'Origin': 'http://localhost:8000', 'Sec-Fetch-Site': 'same-origin', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:8000/kitchen/kitchen.html', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9', 'Cookie': 'ajs_anonymous_id=55423e57-37ba-47d7-acd5-01f110aacf19; rl_page_init_referrer=RudderEncrypt%3AU2FsdGVkX18zYEaLyV6RWj9CczJTEx2hC6fCPUwpMU8%3D; rl_page_init_referring_domain=RudderEncrypt%3AU2FsdGVkX1%2BaNpw%2F0SBsF%2B%2BRlIfSgSpNjcjYD%2BT1xaQ%3D; n8n-auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImJmZGQwMTI3LTU4ZmItNDE1Ny05MWFiLTRjNTI0OGFhMjcyZSIsImhhc2giOiJ6ZWFkMFZGeVBWIiwiYnJvd3NlcklkIjoialBBZUJjWUJ0ZTljUFFzTDJ5ZmNnV0tOL0NTTFlRUkNBTGNxek81TSswZz0iLCJpYXQiOjE3MzYzMTk2OTQsImV4cCI6MTczNjkyNDQ5NH0.OdMRRZuzDkXK_Aeolyd3AirfP51ufdDiXkWZItIuxlA; rl_anonymous_id=RudderEncrypt%3AU2FsdGVkX1%2BlCSBgNyJNfin4LsW25p5G%2Fn5uks%2FqszAG82Ph6CtQ3z3wr93ZwqGHlmBJZWqcBl4TMAeaVT7bGA%3D%3D; rl_user_id=RudderEncrypt%3AU2FsdGVkX1%2B%2Bjnm8mMNnf5qtLW7BjN351DgI%2BU1oEC%2BPgollpnYVtxiJeaUFBUqRcQtYifCyy5P1mfYvtQWCtTTISQI%2F22dFYficlhXriZCyufUKUNfXq7eFrJyZgf7h5EXEUdM7XQgEaT9gCb5BXQBanFOFHQcN7jMBBkTQhDw%3D; rl_trait=RudderEncrypt%3AU2FsdGVkX18rLv4cMHGVPi3HGFcwFR%2BhhX8zGnLIQhUEle%2Bz5M%2BVF6AnhhAsqMW1HXCURcaZNLQlF4XC3ls9HaDermIjRIxbfkHwYMJH13XN03opdQhsMq%2BQmUbEmXbBDFVW5k0oz1kpJguzMBeaLg%3D%3D; rl_session=RudderEncrypt%3AU2FsdGVkX1%2FH0GK5vZuTHfMPiB5Ont6649jpqkIGz1nYC99v5h7ZU4qnvBXU19qUHL32ZGwhoMzSAJpMD8VTreHM6X%2B1qFm2MtBa80r3K0VGzDq%2FxPPW4F%2BAN%2BRUxhfozrz2chDqvAWv6pCqlt710Q%3D%3D; ph_phc_4URIAm1uYfJO7j8kWSe0J8lc8IqnstRLS7Jx8NcakHo_posthog=%7B%22distinct_id%22%3A%22484cb91abc553eb0728fba27350d2547e4f79f2e843d0e1c5526197d70397c0a%23bfdd0127-58fb-4157-91ab-4c5248aa272e%22%2C%22%24sesid%22%3A%5B1736321172669%2C%22019444b7-fe5e-7eee-8627-ac22f265f710%22%2C1736319696477%5D%2C%22%24epp%22%3Atrue%2C%22%24initial_person_info%22%3A%7B%22r%22%3A%22%24direct%22%2C%22u%22%3A%22http%3A%2F%2Flocalhost%3A5678%2Fhome%2Fworkflows%22%7D%7D; _streamlit_xsrf=2|c6de634e|9ffd4b3613496bb8eaaa905137daa690|1731648966'}
+=== Error Details ===
+2025-01-12T10:06:06.499Z [USER_ACTION:file_input] User Interaction
+Stack: 
+Context: {"inputId":"gallery-image","fileName":"20241117_111927.jpg","fileType":"image/jpeg","timestamp":"2025-01-12T10:06:06.499Z"}
+
+
+==================================================
+
+
+=== Server Info ===
+Timestamp: 2025-01-12T14:06:08.348301
+Client: 127.0.0.1
+Path: /api/log-error
+Headers: {'Host': 'localhost:8000', 'Connection': 'keep-alive', 'Content-Length': '353', 'sec-ch-ua-platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"', 'DNT': '1', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryr7ormDai4WxL1TSz', 'sec-ch-ua-mobile': '?0', 'Accept': '*/*', 'Origin': 'http://localhost:8000', 'Sec-Fetch-Site': 'same-origin', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:8000/kitchen/kitchen.html', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9', 'Cookie': 'ajs_anonymous_id=55423e57-37ba-47d7-acd5-01f110aacf19; rl_page_init_referrer=RudderEncrypt%3AU2FsdGVkX18zYEaLyV6RWj9CczJTEx2hC6fCPUwpMU8%3D; rl_page_init_referring_domain=RudderEncrypt%3AU2FsdGVkX1%2BaNpw%2F0SBsF%2B%2BRlIfSgSpNjcjYD%2BT1xaQ%3D; n8n-auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImJmZGQwMTI3LTU4ZmItNDE1Ny05MWFiLTRjNTI0OGFhMjcyZSIsImhhc2giOiJ6ZWFkMFZGeVBWIiwiYnJvd3NlcklkIjoialBBZUJjWUJ0ZTljUFFzTDJ5ZmNnV0tOL0NTTFlRUkNBTGNxek81TSswZz0iLCJpYXQiOjE3MzYzMTk2OTQsImV4cCI6MTczNjkyNDQ5NH0.OdMRRZuzDkXK_Aeolyd3AirfP51ufdDiXkWZItIuxlA; rl_anonymous_id=RudderEncrypt%3AU2FsdGVkX1%2BlCSBgNyJNfin4LsW25p5G%2Fn5uks%2FqszAG82Ph6CtQ3z3wr93ZwqGHlmBJZWqcBl4TMAeaVT7bGA%3D%3D; rl_user_id=RudderEncrypt%3AU2FsdGVkX1%2B%2Bjnm8mMNnf5qtLW7BjN351DgI%2BU1oEC%2BPgollpnYVtxiJeaUFBUqRcQtYifCyy5P1mfYvtQWCtTTISQI%2F22dFYficlhXriZCyufUKUNfXq7eFrJyZgf7h5EXEUdM7XQgEaT9gCb5BXQBanFOFHQcN7jMBBkTQhDw%3D; rl_trait=RudderEncrypt%3AU2FsdGVkX18rLv4cMHGVPi3HGFcwFR%2BhhX8zGnLIQhUEle%2Bz5M%2BVF6AnhhAsqMW1HXCURcaZNLQlF4XC3ls9HaDermIjRIxbfkHwYMJH13XN03opdQhsMq%2BQmUbEmXbBDFVW5k0oz1kpJguzMBeaLg%3D%3D; rl_session=RudderEncrypt%3AU2FsdGVkX1%2FH0GK5vZuTHfMPiB5Ont6649jpqkIGz1nYC99v5h7ZU4qnvBXU19qUHL32ZGwhoMzSAJpMD8VTreHM6X%2B1qFm2MtBa80r3K0VGzDq%2FxPPW4F%2BAN%2BRUxhfozrz2chDqvAWv6pCqlt710Q%3D%3D; ph_phc_4URIAm1uYfJO7j8kWSe0J8lc8IqnstRLS7Jx8NcakHo_posthog=%7B%22distinct_id%22%3A%22484cb91abc553eb0728fba27350d2547e4f79f2e843d0e1c5526197d70397c0a%23bfdd0127-58fb-4157-91ab-4c5248aa272e%22%2C%22%24sesid%22%3A%5B1736321172669%2C%22019444b7-fe5e-7eee-8627-ac22f265f710%22%2C1736319696477%5D%2C%22%24epp%22%3Atrue%2C%22%24initial_person_info%22%3A%7B%22r%22%3A%22%24direct%22%2C%22u%22%3A%22http%3A%2F%2Flocalhost%3A5678%2Fhome%2Fworkflows%22%7D%7D; _streamlit_xsrf=2|c6de634e|9ffd4b3613496bb8eaaa905137daa690|1731648966'}
+=== Error Details ===
+2025-01-12T10:06:08.347Z [USER_ACTION:button_click] User Interaction
+Stack: 
+Context: {"buttonText":"Upload Images","buttonId":"upload-images-btn","buttonType":"submit","timestamp":"2025-01-12T10:06:08.347Z"}
+
+
+==================================================
+
+
+=== Server Info ===
+Timestamp: 2025-01-12T14:06:15.456584
+Client: 127.0.0.1
+Path: /api/log-error
+Headers: {'Host': 'localhost:8000', 'Connection': 'keep-alive', 'Content-Length': '353', 'sec-ch-ua-platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"', 'DNT': '1', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryNbvyhDrxAfxXadfR', 'sec-ch-ua-mobile': '?0', 'Accept': '*/*', 'Origin': 'http://localhost:8000', 'Sec-Fetch-Site': 'same-origin', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:8000/kitchen/kitchen.html', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9', 'Cookie': 'ajs_anonymous_id=55423e57-37ba-47d7-acd5-01f110aacf19; rl_page_init_referrer=RudderEncrypt%3AU2FsdGVkX18zYEaLyV6RWj9CczJTEx2hC6fCPUwpMU8%3D; rl_page_init_referring_domain=RudderEncrypt%3AU2FsdGVkX1%2BaNpw%2F0SBsF%2B%2BRlIfSgSpNjcjYD%2BT1xaQ%3D; n8n-auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImJmZGQwMTI3LTU4ZmItNDE1Ny05MWFiLTRjNTI0OGFhMjcyZSIsImhhc2giOiJ6ZWFkMFZGeVBWIiwiYnJvd3NlcklkIjoialBBZUJjWUJ0ZTljUFFzTDJ5ZmNnV0tOL0NTTFlRUkNBTGNxek81TSswZz0iLCJpYXQiOjE3MzYzMTk2OTQsImV4cCI6MTczNjkyNDQ5NH0.OdMRRZuzDkXK_Aeolyd3AirfP51ufdDiXkWZItIuxlA; rl_anonymous_id=RudderEncrypt%3AU2FsdGVkX1%2BlCSBgNyJNfin4LsW25p5G%2Fn5uks%2FqszAG82Ph6CtQ3z3wr93ZwqGHlmBJZWqcBl4TMAeaVT7bGA%3D%3D; rl_user_id=RudderEncrypt%3AU2FsdGVkX1%2B%2Bjnm8mMNnf5qtLW7BjN351DgI%2BU1oEC%2BPgollpnYVtxiJeaUFBUqRcQtYifCyy5P1mfYvtQWCtTTISQI%2F22dFYficlhXriZCyufUKUNfXq7eFrJyZgf7h5EXEUdM7XQgEaT9gCb5BXQBanFOFHQcN7jMBBkTQhDw%3D; rl_trait=RudderEncrypt%3AU2FsdGVkX18rLv4cMHGVPi3HGFcwFR%2BhhX8zGnLIQhUEle%2Bz5M%2BVF6AnhhAsqMW1HXCURcaZNLQlF4XC3ls9HaDermIjRIxbfkHwYMJH13XN03opdQhsMq%2BQmUbEmXbBDFVW5k0oz1kpJguzMBeaLg%3D%3D; rl_session=RudderEncrypt%3AU2FsdGVkX1%2FH0GK5vZuTHfMPiB5Ont6649jpqkIGz1nYC99v5h7ZU4qnvBXU19qUHL32ZGwhoMzSAJpMD8VTreHM6X%2B1qFm2MtBa80r3K0VGzDq%2FxPPW4F%2BAN%2BRUxhfozrz2chDqvAWv6pCqlt710Q%3D%3D; ph_phc_4URIAm1uYfJO7j8kWSe0J8lc8IqnstRLS7Jx8NcakHo_posthog=%7B%22distinct_id%22%3A%22484cb91abc553eb0728fba27350d2547e4f79f2e843d0e1c5526197d70397c0a%23bfdd0127-58fb-4157-91ab-4c5248aa272e%22%2C%22%24sesid%22%3A%5B1736321172669%2C%22019444b7-fe5e-7eee-8627-ac22f265f710%22%2C1736319696477%5D%2C%22%24epp%22%3Atrue%2C%22%24initial_person_info%22%3A%7B%22r%22%3A%22%24direct%22%2C%22u%22%3A%22http%3A%2F%2Flocalhost%3A5678%2Fhome%2Fworkflows%22%7D%7D; _streamlit_xsrf=2|c6de634e|9ffd4b3613496bb8eaaa905137daa690|1731648966'}
+=== Error Details ===
+2025-01-12T10:06:15.144Z [USER_ACTION:button_click] User Interaction
+Stack: 
+Context: {"buttonText":"Upload Images","buttonId":"upload-images-btn","buttonType":"submit","timestamp":"2025-01-12T10:06:15.144Z"}
+
+
+==================================================
+
+
+=== Server Info ===
+Timestamp: 2025-01-12T14:14:12.417980
+Client: 127.0.0.1
+Path: /api/log-error
+Headers: {'Host': 'localhost:8000', 'Connection': 'keep-alive', 'Content-Length': '391', 'sec-ch-ua-platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"', 'DNT': '1', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryQlC0cxciPPBow5IE', 'sec-ch-ua-mobile': '?0', 'Accept': '*/*', 'Origin': 'http://localhost:8000', 'Sec-Fetch-Site': 'same-origin', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:8000/kitchen/kitchen.html', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9', 'Cookie': 'ajs_anonymous_id=55423e57-37ba-47d7-acd5-01f110aacf19; rl_page_init_referrer=RudderEncrypt%3AU2FsdGVkX18zYEaLyV6RWj9CczJTEx2hC6fCPUwpMU8%3D; rl_page_init_referring_domain=RudderEncrypt%3AU2FsdGVkX1%2BaNpw%2F0SBsF%2B%2BRlIfSgSpNjcjYD%2BT1xaQ%3D; n8n-auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImJmZGQwMTI3LTU4ZmItNDE1Ny05MWFiLTRjNTI0OGFhMjcyZSIsImhhc2giOiJ6ZWFkMFZGeVBWIiwiYnJvd3NlcklkIjoialBBZUJjWUJ0ZTljUFFzTDJ5ZmNnV0tOL0NTTFlRUkNBTGNxek81TSswZz0iLCJpYXQiOjE3MzYzMTk2OTQsImV4cCI6MTczNjkyNDQ5NH0.OdMRRZuzDkXK_Aeolyd3AirfP51ufdDiXkWZItIuxlA; rl_anonymous_id=RudderEncrypt%3AU2FsdGVkX1%2BlCSBgNyJNfin4LsW25p5G%2Fn5uks%2FqszAG82Ph6CtQ3z3wr93ZwqGHlmBJZWqcBl4TMAeaVT7bGA%3D%3D; rl_user_id=RudderEncrypt%3AU2FsdGVkX1%2B%2Bjnm8mMNnf5qtLW7BjN351DgI%2BU1oEC%2BPgollpnYVtxiJeaUFBUqRcQtYifCyy5P1mfYvtQWCtTTISQI%2F22dFYficlhXriZCyufUKUNfXq7eFrJyZgf7h5EXEUdM7XQgEaT9gCb5BXQBanFOFHQcN7jMBBkTQhDw%3D; rl_trait=RudderEncrypt%3AU2FsdGVkX18rLv4cMHGVPi3HGFcwFR%2BhhX8zGnLIQhUEle%2Bz5M%2BVF6AnhhAsqMW1HXCURcaZNLQlF4XC3ls9HaDermIjRIxbfkHwYMJH13XN03opdQhsMq%2BQmUbEmXbBDFVW5k0oz1kpJguzMBeaLg%3D%3D; rl_session=RudderEncrypt%3AU2FsdGVkX1%2FH0GK5vZuTHfMPiB5Ont6649jpqkIGz1nYC99v5h7ZU4qnvBXU19qUHL32ZGwhoMzSAJpMD8VTreHM6X%2B1qFm2MtBa80r3K0VGzDq%2FxPPW4F%2BAN%2BRUxhfozrz2chDqvAWv6pCqlt710Q%3D%3D; ph_phc_4URIAm1uYfJO7j8kWSe0J8lc8IqnstRLS7Jx8NcakHo_posthog=%7B%22distinct_id%22%3A%22484cb91abc553eb0728fba27350d2547e4f79f2e843d0e1c5526197d70397c0a%23bfdd0127-58fb-4157-91ab-4c5248aa272e%22%2C%22%24sesid%22%3A%5B1736321172669%2C%22019444b7-fe5e-7eee-8627-ac22f265f710%22%2C1736319696477%5D%2C%22%24epp%22%3Atrue%2C%22%24initial_person_info%22%3A%7B%22r%22%3A%22%24direct%22%2C%22u%22%3A%22http%3A%2F%2Flocalhost%3A5678%2Fhome%2Fworkflows%22%7D%7D; _streamlit_xsrf=2|c6de634e|9ffd4b3613496bb8eaaa905137daa690|1731648966'}
+=== Error Details ===
+2025-01-12T10:14:12.415Z [USER_ACTION:file_input]
+Details:
+{
+  "inputId": "gallery-image",
+  "fileName": "20241117_111927.jpg",
+  "fileType": "image/jpeg",
+  "timestamp": "2025-01-12T10:14:12.415Z"
+}
+----------------------------------------
+
+
+==================================================
+
+
+=== Server Info ===
+Timestamp: 2025-01-12T14:14:14.824111
+Client: 127.0.0.1
+Path: /api/log-error
+Headers: {'Host': 'localhost:8000', 'Connection': 'keep-alive', 'Content-Length': '392', 'sec-ch-ua-platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"', 'DNT': '1', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryWNJbG08cqBa3P2Io', 'sec-ch-ua-mobile': '?0', 'Accept': '*/*', 'Origin': 'http://localhost:8000', 'Sec-Fetch-Site': 'same-origin', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:8000/kitchen/kitchen.html', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9', 'Cookie': 'ajs_anonymous_id=55423e57-37ba-47d7-acd5-01f110aacf19; rl_page_init_referrer=RudderEncrypt%3AU2FsdGVkX18zYEaLyV6RWj9CczJTEx2hC6fCPUwpMU8%3D; rl_page_init_referring_domain=RudderEncrypt%3AU2FsdGVkX1%2BaNpw%2F0SBsF%2B%2BRlIfSgSpNjcjYD%2BT1xaQ%3D; n8n-auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImJmZGQwMTI3LTU4ZmItNDE1Ny05MWFiLTRjNTI0OGFhMjcyZSIsImhhc2giOiJ6ZWFkMFZGeVBWIiwiYnJvd3NlcklkIjoialBBZUJjWUJ0ZTljUFFzTDJ5ZmNnV0tOL0NTTFlRUkNBTGNxek81TSswZz0iLCJpYXQiOjE3MzYzMTk2OTQsImV4cCI6MTczNjkyNDQ5NH0.OdMRRZuzDkXK_Aeolyd3AirfP51ufdDiXkWZItIuxlA; rl_anonymous_id=RudderEncrypt%3AU2FsdGVkX1%2BlCSBgNyJNfin4LsW25p5G%2Fn5uks%2FqszAG82Ph6CtQ3z3wr93ZwqGHlmBJZWqcBl4TMAeaVT7bGA%3D%3D; rl_user_id=RudderEncrypt%3AU2FsdGVkX1%2B%2Bjnm8mMNnf5qtLW7BjN351DgI%2BU1oEC%2BPgollpnYVtxiJeaUFBUqRcQtYifCyy5P1mfYvtQWCtTTISQI%2F22dFYficlhXriZCyufUKUNfXq7eFrJyZgf7h5EXEUdM7XQgEaT9gCb5BXQBanFOFHQcN7jMBBkTQhDw%3D; rl_trait=RudderEncrypt%3AU2FsdGVkX18rLv4cMHGVPi3HGFcwFR%2BhhX8zGnLIQhUEle%2Bz5M%2BVF6AnhhAsqMW1HXCURcaZNLQlF4XC3ls9HaDermIjRIxbfkHwYMJH13XN03opdQhsMq%2BQmUbEmXbBDFVW5k0oz1kpJguzMBeaLg%3D%3D; rl_session=RudderEncrypt%3AU2FsdGVkX1%2FH0GK5vZuTHfMPiB5Ont6649jpqkIGz1nYC99v5h7ZU4qnvBXU19qUHL32ZGwhoMzSAJpMD8VTreHM6X%2B1qFm2MtBa80r3K0VGzDq%2FxPPW4F%2BAN%2BRUxhfozrz2chDqvAWv6pCqlt710Q%3D%3D; ph_phc_4URIAm1uYfJO7j8kWSe0J8lc8IqnstRLS7Jx8NcakHo_posthog=%7B%22distinct_id%22%3A%22484cb91abc553eb0728fba27350d2547e4f79f2e843d0e1c5526197d70397c0a%23bfdd0127-58fb-4157-91ab-4c5248aa272e%22%2C%22%24sesid%22%3A%5B1736321172669%2C%22019444b7-fe5e-7eee-8627-ac22f265f710%22%2C1736319696477%5D%2C%22%24epp%22%3Atrue%2C%22%24initial_person_info%22%3A%7B%22r%22%3A%22%24direct%22%2C%22u%22%3A%22http%3A%2F%2Flocalhost%3A5678%2Fhome%2Fworkflows%22%7D%7D; _streamlit_xsrf=2|c6de634e|9ffd4b3613496bb8eaaa905137daa690|1731648966'}
+=== Error Details ===
+2025-01-12T10:14:14.505Z [USER_ACTION:button_click]
+Details:
+{
+  "buttonText": "Upload Images",
+  "buttonId": "upload-images-btn",
+  "buttonType": "submit",
+  "timestamp": "2025-01-12T10:14:14.505Z"
+}
+----------------------------------------
+
+
+==================================================
+
+
+=== Server Info ===
+Timestamp: 2025-01-12T14:15:35.552774
+Client: 127.0.0.1
+Path: /api/log-error
+Headers: {'Host': 'localhost:8000', 'Connection': 'keep-alive', 'Content-Length': '382', 'sec-ch-ua-platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"', 'DNT': '1', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundary8EPwxL3hbtHhK9si', 'sec-ch-ua-mobile': '?0', 'Accept': '*/*', 'Origin': 'http://localhost:8000', 'Sec-Fetch-Site': 'same-origin', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:8000/kitchen/kitchen.html', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9', 'Cookie': 'ajs_anonymous_id=55423e57-37ba-47d7-acd5-01f110aacf19; rl_page_init_referrer=RudderEncrypt%3AU2FsdGVkX18zYEaLyV6RWj9CczJTEx2hC6fCPUwpMU8%3D; rl_page_init_referring_domain=RudderEncrypt%3AU2FsdGVkX1%2BaNpw%2F0SBsF%2B%2BRlIfSgSpNjcjYD%2BT1xaQ%3D; n8n-auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImJmZGQwMTI3LTU4ZmItNDE1Ny05MWFiLTRjNTI0OGFhMjcyZSIsImhhc2giOiJ6ZWFkMFZGeVBWIiwiYnJvd3NlcklkIjoialBBZUJjWUJ0ZTljUFFzTDJ5ZmNnV0tOL0NTTFlRUkNBTGNxek81TSswZz0iLCJpYXQiOjE3MzYzMTk2OTQsImV4cCI6MTczNjkyNDQ5NH0.OdMRRZuzDkXK_Aeolyd3AirfP51ufdDiXkWZItIuxlA; rl_anonymous_id=RudderEncrypt%3AU2FsdGVkX1%2BlCSBgNyJNfin4LsW25p5G%2Fn5uks%2FqszAG82Ph6CtQ3z3wr93ZwqGHlmBJZWqcBl4TMAeaVT7bGA%3D%3D; rl_user_id=RudderEncrypt%3AU2FsdGVkX1%2B%2Bjnm8mMNnf5qtLW7BjN351DgI%2BU1oEC%2BPgollpnYVtxiJeaUFBUqRcQtYifCyy5P1mfYvtQWCtTTISQI%2F22dFYficlhXriZCyufUKUNfXq7eFrJyZgf7h5EXEUdM7XQgEaT9gCb5BXQBanFOFHQcN7jMBBkTQhDw%3D; rl_trait=RudderEncrypt%3AU2FsdGVkX18rLv4cMHGVPi3HGFcwFR%2BhhX8zGnLIQhUEle%2Bz5M%2BVF6AnhhAsqMW1HXCURcaZNLQlF4XC3ls9HaDermIjRIxbfkHwYMJH13XN03opdQhsMq%2BQmUbEmXbBDFVW5k0oz1kpJguzMBeaLg%3D%3D; rl_session=RudderEncrypt%3AU2FsdGVkX1%2FH0GK5vZuTHfMPiB5Ont6649jpqkIGz1nYC99v5h7ZU4qnvBXU19qUHL32ZGwhoMzSAJpMD8VTreHM6X%2B1qFm2MtBa80r3K0VGzDq%2FxPPW4F%2BAN%2BRUxhfozrz2chDqvAWv6pCqlt710Q%3D%3D; ph_phc_4URIAm1uYfJO7j8kWSe0J8lc8IqnstRLS7Jx8NcakHo_posthog=%7B%22distinct_id%22%3A%22484cb91abc553eb0728fba27350d2547e4f79f2e843d0e1c5526197d70397c0a%23bfdd0127-58fb-4157-91ab-4c5248aa272e%22%2C%22%24sesid%22%3A%5B1736321172669%2C%22019444b7-fe5e-7eee-8627-ac22f265f710%22%2C1736319696477%5D%2C%22%24epp%22%3Atrue%2C%22%24initial_person_info%22%3A%7B%22r%22%3A%22%24direct%22%2C%22u%22%3A%22http%3A%2F%2Flocalhost%3A5678%2Fhome%2Fworkflows%22%7D%7D; _streamlit_xsrf=2|c6de634e|9ffd4b3613496bb8eaaa905137daa690|1731648966'}
+=== Error Details ===
+2025-01-12T10:15:35.234Z [USER_ACTION:button_click]
+Details:
+{
+  "buttonText": "Add Item",
+  "buttonId": "add-item-btn",
+  "buttonType": "button",
+  "timestamp": "2025-01-12T10:15:35.234Z"
+}
+----------------------------------------
+
+
+==================================================
+
+
+=== Server Info ===
+Timestamp: 2025-01-12T14:15:44.082005
+Client: 127.0.0.1
+Path: /api/log-error
+Headers: {'Host': 'localhost:8000', 'Connection': 'keep-alive', 'Content-Length': '382', 'sec-ch-ua-platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"', 'DNT': '1', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryqDVYB6yn7waxZ3Bu', 'sec-ch-ua-mobile': '?0', 'Accept': '*/*', 'Origin': 'http://localhost:8000', 'Sec-Fetch-Site': 'same-origin', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:8000/kitchen/kitchen.html', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9', 'Cookie': 'ajs_anonymous_id=55423e57-37ba-47d7-acd5-01f110aacf19; rl_page_init_referrer=RudderEncrypt%3AU2FsdGVkX18zYEaLyV6RWj9CczJTEx2hC6fCPUwpMU8%3D; rl_page_init_referring_domain=RudderEncrypt%3AU2FsdGVkX1%2BaNpw%2F0SBsF%2B%2BRlIfSgSpNjcjYD%2BT1xaQ%3D; n8n-auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImJmZGQwMTI3LTU4ZmItNDE1Ny05MWFiLTRjNTI0OGFhMjcyZSIsImhhc2giOiJ6ZWFkMFZGeVBWIiwiYnJvd3NlcklkIjoialBBZUJjWUJ0ZTljUFFzTDJ5ZmNnV0tOL0NTTFlRUkNBTGNxek81TSswZz0iLCJpYXQiOjE3MzYzMTk2OTQsImV4cCI6MTczNjkyNDQ5NH0.OdMRRZuzDkXK_Aeolyd3AirfP51ufdDiXkWZItIuxlA; rl_anonymous_id=RudderEncrypt%3AU2FsdGVkX1%2BlCSBgNyJNfin4LsW25p5G%2Fn5uks%2FqszAG82Ph6CtQ3z3wr93ZwqGHlmBJZWqcBl4TMAeaVT7bGA%3D%3D; rl_user_id=RudderEncrypt%3AU2FsdGVkX1%2B%2Bjnm8mMNnf5qtLW7BjN351DgI%2BU1oEC%2BPgollpnYVtxiJeaUFBUqRcQtYifCyy5P1mfYvtQWCtTTISQI%2F22dFYficlhXriZCyufUKUNfXq7eFrJyZgf7h5EXEUdM7XQgEaT9gCb5BXQBanFOFHQcN7jMBBkTQhDw%3D; rl_trait=RudderEncrypt%3AU2FsdGVkX18rLv4cMHGVPi3HGFcwFR%2BhhX8zGnLIQhUEle%2Bz5M%2BVF6AnhhAsqMW1HXCURcaZNLQlF4XC3ls9HaDermIjRIxbfkHwYMJH13XN03opdQhsMq%2BQmUbEmXbBDFVW5k0oz1kpJguzMBeaLg%3D%3D; rl_session=RudderEncrypt%3AU2FsdGVkX1%2FH0GK5vZuTHfMPiB5Ont6649jpqkIGz1nYC99v5h7ZU4qnvBXU19qUHL32ZGwhoMzSAJpMD8VTreHM6X%2B1qFm2MtBa80r3K0VGzDq%2FxPPW4F%2BAN%2BRUxhfozrz2chDqvAWv6pCqlt710Q%3D%3D; ph_phc_4URIAm1uYfJO7j8kWSe0J8lc8IqnstRLS7Jx8NcakHo_posthog=%7B%22distinct_id%22%3A%22484cb91abc553eb0728fba27350d2547e4f79f2e843d0e1c5526197d70397c0a%23bfdd0127-58fb-4157-91ab-4c5248aa272e%22%2C%22%24sesid%22%3A%5B1736321172669%2C%22019444b7-fe5e-7eee-8627-ac22f265f710%22%2C1736319696477%5D%2C%22%24epp%22%3Atrue%2C%22%24initial_person_info%22%3A%7B%22r%22%3A%22%24direct%22%2C%22u%22%3A%22http%3A%2F%2Flocalhost%3A5678%2Fhome%2Fworkflows%22%7D%7D; _streamlit_xsrf=2|c6de634e|9ffd4b3613496bb8eaaa905137daa690|1731648966'}
+=== Error Details ===
+2025-01-12T10:15:44.081Z [USER_ACTION:button_click]
+Details:
+{
+  "buttonText": "Add Item",
+  "buttonId": "add-item-btn",
+  "buttonType": "button",
+  "timestamp": "2025-01-12T10:15:44.081Z"
+}
+----------------------------------------
+
+
+==================================================
+
+
+=== Server Info ===
+Timestamp: 2025-01-12T14:21:15.416139
+Client: 127.0.0.1
+Path: /api/log-error
+Headers: {'Host': 'localhost:8000', 'Connection': 'keep-alive', 'Content-Length': '547', 'sec-ch-ua-platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"', 'DNT': '1', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryOBlWN72CBsPS8C6j', 'sec-ch-ua-mobile': '?0', 'Accept': '*/*', 'Origin': 'http://localhost:8000', 'Sec-Fetch-Site': 'same-origin', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:8000/kitchen/kitchen.html', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9', 'Cookie': 'ajs_anonymous_id=55423e57-37ba-47d7-acd5-01f110aacf19; rl_page_init_referrer=RudderEncrypt%3AU2FsdGVkX18zYEaLyV6RWj9CczJTEx2hC6fCPUwpMU8%3D; rl_page_init_referring_domain=RudderEncrypt%3AU2FsdGVkX1%2BaNpw%2F0SBsF%2B%2BRlIfSgSpNjcjYD%2BT1xaQ%3D; n8n-auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImJmZGQwMTI3LTU4ZmItNDE1Ny05MWFiLTRjNTI0OGFhMjcyZSIsImhhc2giOiJ6ZWFkMFZGeVBWIiwiYnJvd3NlcklkIjoialBBZUJjWUJ0ZTljUFFzTDJ5ZmNnV0tOL0NTTFlRUkNBTGNxek81TSswZz0iLCJpYXQiOjE3MzYzMTk2OTQsImV4cCI6MTczNjkyNDQ5NH0.OdMRRZuzDkXK_Aeolyd3AirfP51ufdDiXkWZItIuxlA; rl_anonymous_id=RudderEncrypt%3AU2FsdGVkX1%2BlCSBgNyJNfin4LsW25p5G%2Fn5uks%2FqszAG82Ph6CtQ3z3wr93ZwqGHlmBJZWqcBl4TMAeaVT7bGA%3D%3D; rl_user_id=RudderEncrypt%3AU2FsdGVkX1%2B%2Bjnm8mMNnf5qtLW7BjN351DgI%2BU1oEC%2BPgollpnYVtxiJeaUFBUqRcQtYifCyy5P1mfYvtQWCtTTISQI%2F22dFYficlhXriZCyufUKUNfXq7eFrJyZgf7h5EXEUdM7XQgEaT9gCb5BXQBanFOFHQcN7jMBBkTQhDw%3D; rl_trait=RudderEncrypt%3AU2FsdGVkX18rLv4cMHGVPi3HGFcwFR%2BhhX8zGnLIQhUEle%2Bz5M%2BVF6AnhhAsqMW1HXCURcaZNLQlF4XC3ls9HaDermIjRIxbfkHwYMJH13XN03opdQhsMq%2BQmUbEmXbBDFVW5k0oz1kpJguzMBeaLg%3D%3D; rl_session=RudderEncrypt%3AU2FsdGVkX1%2FH0GK5vZuTHfMPiB5Ont6649jpqkIGz1nYC99v5h7ZU4qnvBXU19qUHL32ZGwhoMzSAJpMD8VTreHM6X%2B1qFm2MtBa80r3K0VGzDq%2FxPPW4F%2BAN%2BRUxhfozrz2chDqvAWv6pCqlt710Q%3D%3D; ph_phc_4URIAm1uYfJO7j8kWSe0J8lc8IqnstRLS7Jx8NcakHo_posthog=%7B%22distinct_id%22%3A%22484cb91abc553eb0728fba27350d2547e4f79f2e843d0e1c5526197d70397c0a%23bfdd0127-58fb-4157-91ab-4c5248aa272e%22%2C%22%24sesid%22%3A%5B1736321172669%2C%22019444b7-fe5e-7eee-8627-ac22f265f710%22%2C1736319696477%5D%2C%22%24epp%22%3Atrue%2C%22%24initial_person_info%22%3A%7B%22r%22%3A%22%24direct%22%2C%22u%22%3A%22http%3A%2F%2Flocalhost%3A5678%2Fhome%2Fworkflows%22%7D%7D; _streamlit_xsrf=2|c6de634e|9ffd4b3613496bb8eaaa905137daa690|1731648966'}
+=== Error Details ===
+2025-01-12T10:21:15.413Z [ERROR:handleSampleDataLoad] this.itemManager.loadSampleData is not a function
+Stack Trace:
+TypeError: this.itemManager.loadSampleData is not a function
+    at UIManager.handleSampleDataLoad (http://localhost:8000/js/uiManager.js:396:50)
+    at HTMLButtonElement.<anonymous> (http://localhost:8000/js/uiManager.js:76:68)
+Context: {}
+----------------------------------------
+
+
+==================================================
+
+
+=== Server Info ===
+Timestamp: 2025-01-12T14:21:15.419134
+Client: 127.0.0.1
+Path: /api/log-error
+Headers: {'Host': 'localhost:8000', 'Connection': 'keep-alive', 'Content-Length': '393', 'sec-ch-ua-platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"', 'DNT': '1', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryDIJfdpq0KnN2pUag', 'sec-ch-ua-mobile': '?0', 'Accept': '*/*', 'Origin': 'http://localhost:8000', 'Sec-Fetch-Site': 'same-origin', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:8000/kitchen/kitchen.html', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9', 'Cookie': 'ajs_anonymous_id=55423e57-37ba-47d7-acd5-01f110aacf19; rl_page_init_referrer=RudderEncrypt%3AU2FsdGVkX18zYEaLyV6RWj9CczJTEx2hC6fCPUwpMU8%3D; rl_page_init_referring_domain=RudderEncrypt%3AU2FsdGVkX1%2BaNpw%2F0SBsF%2B%2BRlIfSgSpNjcjYD%2BT1xaQ%3D; n8n-auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImJmZGQwMTI3LTU4ZmItNDE1Ny05MWFiLTRjNTI0OGFhMjcyZSIsImhhc2giOiJ6ZWFkMFZGeVBWIiwiYnJvd3NlcklkIjoialBBZUJjWUJ0ZTljUFFzTDJ5ZmNnV0tOL0NTTFlRUkNBTGNxek81TSswZz0iLCJpYXQiOjE3MzYzMTk2OTQsImV4cCI6MTczNjkyNDQ5NH0.OdMRRZuzDkXK_Aeolyd3AirfP51ufdDiXkWZItIuxlA; rl_anonymous_id=RudderEncrypt%3AU2FsdGVkX1%2BlCSBgNyJNfin4LsW25p5G%2Fn5uks%2FqszAG82Ph6CtQ3z3wr93ZwqGHlmBJZWqcBl4TMAeaVT7bGA%3D%3D; rl_user_id=RudderEncrypt%3AU2FsdGVkX1%2B%2Bjnm8mMNnf5qtLW7BjN351DgI%2BU1oEC%2BPgollpnYVtxiJeaUFBUqRcQtYifCyy5P1mfYvtQWCtTTISQI%2F22dFYficlhXriZCyufUKUNfXq7eFrJyZgf7h5EXEUdM7XQgEaT9gCb5BXQBanFOFHQcN7jMBBkTQhDw%3D; rl_trait=RudderEncrypt%3AU2FsdGVkX18rLv4cMHGVPi3HGFcwFR%2BhhX8zGnLIQhUEle%2Bz5M%2BVF6AnhhAsqMW1HXCURcaZNLQlF4XC3ls9HaDermIjRIxbfkHwYMJH13XN03opdQhsMq%2BQmUbEmXbBDFVW5k0oz1kpJguzMBeaLg%3D%3D; rl_session=RudderEncrypt%3AU2FsdGVkX1%2FH0GK5vZuTHfMPiB5Ont6649jpqkIGz1nYC99v5h7ZU4qnvBXU19qUHL32ZGwhoMzSAJpMD8VTreHM6X%2B1qFm2MtBa80r3K0VGzDq%2FxPPW4F%2BAN%2BRUxhfozrz2chDqvAWv6pCqlt710Q%3D%3D; ph_phc_4URIAm1uYfJO7j8kWSe0J8lc8IqnstRLS7Jx8NcakHo_posthog=%7B%22distinct_id%22%3A%22484cb91abc553eb0728fba27350d2547e4f79f2e843d0e1c5526197d70397c0a%23bfdd0127-58fb-4157-91ab-4c5248aa272e%22%2C%22%24sesid%22%3A%5B1736321172669%2C%22019444b7-fe5e-7eee-8627-ac22f265f710%22%2C1736319696477%5D%2C%22%24epp%22%3Atrue%2C%22%24initial_person_info%22%3A%7B%22r%22%3A%22%24direct%22%2C%22u%22%3A%22http%3A%2F%2Flocalhost%3A5678%2Fhome%2Fworkflows%22%7D%7D; _streamlit_xsrf=2|c6de634e|9ffd4b3613496bb8eaaa905137daa690|1731648966'}
+=== Error Details ===
+2025-01-12T10:21:15.415Z [USER_ACTION:button_click]
+Details:
+{
+  "buttonText": "Load Sample Data",
+  "buttonId": "load-sample-btn",
+  "buttonType": "submit",
+  "timestamp": "2025-01-12T10:21:15.415Z"
+}
+----------------------------------------
+
+
+==================================================
+
+
+=== Server Info ===
+Timestamp: 2025-01-12T14:21:20.918356
+Client: 127.0.0.1
+Path: /api/log-error
+Headers: {'Host': 'localhost:8000', 'Connection': 'keep-alive', 'Content-Length': '547', 'sec-ch-ua-platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"', 'DNT': '1', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundarye8h4yU3gibPHwav6', 'sec-ch-ua-mobile': '?0', 'Accept': '*/*', 'Origin': 'http://localhost:8000', 'Sec-Fetch-Site': 'same-origin', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:8000/kitchen/kitchen.html', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9', 'Cookie': 'ajs_anonymous_id=55423e57-37ba-47d7-acd5-01f110aacf19; rl_page_init_referrer=RudderEncrypt%3AU2FsdGVkX18zYEaLyV6RWj9CczJTEx2hC6fCPUwpMU8%3D; rl_page_init_referring_domain=RudderEncrypt%3AU2FsdGVkX1%2BaNpw%2F0SBsF%2B%2BRlIfSgSpNjcjYD%2BT1xaQ%3D; n8n-auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImJmZGQwMTI3LTU4ZmItNDE1Ny05MWFiLTRjNTI0OGFhMjcyZSIsImhhc2giOiJ6ZWFkMFZGeVBWIiwiYnJvd3NlcklkIjoialBBZUJjWUJ0ZTljUFFzTDJ5ZmNnV0tOL0NTTFlRUkNBTGNxek81TSswZz0iLCJpYXQiOjE3MzYzMTk2OTQsImV4cCI6MTczNjkyNDQ5NH0.OdMRRZuzDkXK_Aeolyd3AirfP51ufdDiXkWZItIuxlA; rl_anonymous_id=RudderEncrypt%3AU2FsdGVkX1%2BlCSBgNyJNfin4LsW25p5G%2Fn5uks%2FqszAG82Ph6CtQ3z3wr93ZwqGHlmBJZWqcBl4TMAeaVT7bGA%3D%3D; rl_user_id=RudderEncrypt%3AU2FsdGVkX1%2B%2Bjnm8mMNnf5qtLW7BjN351DgI%2BU1oEC%2BPgollpnYVtxiJeaUFBUqRcQtYifCyy5P1mfYvtQWCtTTISQI%2F22dFYficlhXriZCyufUKUNfXq7eFrJyZgf7h5EXEUdM7XQgEaT9gCb5BXQBanFOFHQcN7jMBBkTQhDw%3D; rl_trait=RudderEncrypt%3AU2FsdGVkX18rLv4cMHGVPi3HGFcwFR%2BhhX8zGnLIQhUEle%2Bz5M%2BVF6AnhhAsqMW1HXCURcaZNLQlF4XC3ls9HaDermIjRIxbfkHwYMJH13XN03opdQhsMq%2BQmUbEmXbBDFVW5k0oz1kpJguzMBeaLg%3D%3D; rl_session=RudderEncrypt%3AU2FsdGVkX1%2FH0GK5vZuTHfMPiB5Ont6649jpqkIGz1nYC99v5h7ZU4qnvBXU19qUHL32ZGwhoMzSAJpMD8VTreHM6X%2B1qFm2MtBa80r3K0VGzDq%2FxPPW4F%2BAN%2BRUxhfozrz2chDqvAWv6pCqlt710Q%3D%3D; ph_phc_4URIAm1uYfJO7j8kWSe0J8lc8IqnstRLS7Jx8NcakHo_posthog=%7B%22distinct_id%22%3A%22484cb91abc553eb0728fba27350d2547e4f79f2e843d0e1c5526197d70397c0a%23bfdd0127-58fb-4157-91ab-4c5248aa272e%22%2C%22%24sesid%22%3A%5B1736321172669%2C%22019444b7-fe5e-7eee-8627-ac22f265f710%22%2C1736319696477%5D%2C%22%24epp%22%3Atrue%2C%22%24initial_person_info%22%3A%7B%22r%22%3A%22%24direct%22%2C%22u%22%3A%22http%3A%2F%2Flocalhost%3A5678%2Fhome%2Fworkflows%22%7D%7D; _streamlit_xsrf=2|c6de634e|9ffd4b3613496bb8eaaa905137daa690|1731648966'}
+=== Error Details ===
+2025-01-12T10:21:20.608Z [ERROR:handleSampleDataLoad] this.itemManager.loadSampleData is not a function
+Stack Trace:
+TypeError: this.itemManager.loadSampleData is not a function
+    at UIManager.handleSampleDataLoad (http://localhost:8000/js/uiManager.js:396:50)
+    at HTMLButtonElement.<anonymous> (http://localhost:8000/js/uiManager.js:76:68)
+Context: {}
+----------------------------------------
+
+
+==================================================
+
+
+=== Server Info ===
+Timestamp: 2025-01-12T14:21:20.923824
+Client: 127.0.0.1
+Path: /api/log-error
+Headers: {'Host': 'localhost:8000', 'Connection': 'keep-alive', 'Content-Length': '393', 'sec-ch-ua-platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"', 'DNT': '1', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryMS78DzMunqn7a42J', 'sec-ch-ua-mobile': '?0', 'Accept': '*/*', 'Origin': 'http://localhost:8000', 'Sec-Fetch-Site': 'same-origin', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:8000/kitchen/kitchen.html', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9', 'Cookie': 'ajs_anonymous_id=55423e57-37ba-47d7-acd5-01f110aacf19; rl_page_init_referrer=RudderEncrypt%3AU2FsdGVkX18zYEaLyV6RWj9CczJTEx2hC6fCPUwpMU8%3D; rl_page_init_referring_domain=RudderEncrypt%3AU2FsdGVkX1%2BaNpw%2F0SBsF%2B%2BRlIfSgSpNjcjYD%2BT1xaQ%3D; n8n-auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImJmZGQwMTI3LTU4ZmItNDE1Ny05MWFiLTRjNTI0OGFhMjcyZSIsImhhc2giOiJ6ZWFkMFZGeVBWIiwiYnJvd3NlcklkIjoialBBZUJjWUJ0ZTljUFFzTDJ5ZmNnV0tOL0NTTFlRUkNBTGNxek81TSswZz0iLCJpYXQiOjE3MzYzMTk2OTQsImV4cCI6MTczNjkyNDQ5NH0.OdMRRZuzDkXK_Aeolyd3AirfP51ufdDiXkWZItIuxlA; rl_anonymous_id=RudderEncrypt%3AU2FsdGVkX1%2BlCSBgNyJNfin4LsW25p5G%2Fn5uks%2FqszAG82Ph6CtQ3z3wr93ZwqGHlmBJZWqcBl4TMAeaVT7bGA%3D%3D; rl_user_id=RudderEncrypt%3AU2FsdGVkX1%2B%2Bjnm8mMNnf5qtLW7BjN351DgI%2BU1oEC%2BPgollpnYVtxiJeaUFBUqRcQtYifCyy5P1mfYvtQWCtTTISQI%2F22dFYficlhXriZCyufUKUNfXq7eFrJyZgf7h5EXEUdM7XQgEaT9gCb5BXQBanFOFHQcN7jMBBkTQhDw%3D; rl_trait=RudderEncrypt%3AU2FsdGVkX18rLv4cMHGVPi3HGFcwFR%2BhhX8zGnLIQhUEle%2Bz5M%2BVF6AnhhAsqMW1HXCURcaZNLQlF4XC3ls9HaDermIjRIxbfkHwYMJH13XN03opdQhsMq%2BQmUbEmXbBDFVW5k0oz1kpJguzMBeaLg%3D%3D; rl_session=RudderEncrypt%3AU2FsdGVkX1%2FH0GK5vZuTHfMPiB5Ont6649jpqkIGz1nYC99v5h7ZU4qnvBXU19qUHL32ZGwhoMzSAJpMD8VTreHM6X%2B1qFm2MtBa80r3K0VGzDq%2FxPPW4F%2BAN%2BRUxhfozrz2chDqvAWv6pCqlt710Q%3D%3D; ph_phc_4URIAm1uYfJO7j8kWSe0J8lc8IqnstRLS7Jx8NcakHo_posthog=%7B%22distinct_id%22%3A%22484cb91abc553eb0728fba27350d2547e4f79f2e843d0e1c5526197d70397c0a%23bfdd0127-58fb-4157-91ab-4c5248aa272e%22%2C%22%24sesid%22%3A%5B1736321172669%2C%22019444b7-fe5e-7eee-8627-ac22f265f710%22%2C1736319696477%5D%2C%22%24epp%22%3Atrue%2C%22%24initial_person_info%22%3A%7B%22r%22%3A%22%24direct%22%2C%22u%22%3A%22http%3A%2F%2Flocalhost%3A5678%2Fhome%2Fworkflows%22%7D%7D; _streamlit_xsrf=2|c6de634e|9ffd4b3613496bb8eaaa905137daa690|1731648966'}
+=== Error Details ===
+2025-01-12T10:21:20.610Z [USER_ACTION:button_click]
+Details:
+{
+  "buttonText": "Load Sample Data",
+  "buttonId": "load-sample-btn",
+  "buttonType": "submit",
+  "timestamp": "2025-01-12T10:21:20.610Z"
+}
+----------------------------------------
+
+
+==================================================
+
+
+=== Server Info ===
+Timestamp: 2025-01-12T14:22:14.767971
+Client: 127.0.0.1
+Path: /api/log-error
+Headers: {'Host': 'localhost:8000', 'Connection': 'keep-alive', 'Content-Length': '382', 'sec-ch-ua-platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"', 'DNT': '1', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryIS9impzLQR26UjDj', 'sec-ch-ua-mobile': '?0', 'Accept': '*/*', 'Origin': 'http://localhost:8000', 'Sec-Fetch-Site': 'same-origin', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:8000/kitchen/kitchen.html', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9', 'Cookie': 'ajs_anonymous_id=55423e57-37ba-47d7-acd5-01f110aacf19; rl_page_init_referrer=RudderEncrypt%3AU2FsdGVkX18zYEaLyV6RWj9CczJTEx2hC6fCPUwpMU8%3D; rl_page_init_referring_domain=RudderEncrypt%3AU2FsdGVkX1%2BaNpw%2F0SBsF%2B%2BRlIfSgSpNjcjYD%2BT1xaQ%3D; n8n-auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImJmZGQwMTI3LTU4ZmItNDE1Ny05MWFiLTRjNTI0OGFhMjcyZSIsImhhc2giOiJ6ZWFkMFZGeVBWIiwiYnJvd3NlcklkIjoialBBZUJjWUJ0ZTljUFFzTDJ5ZmNnV0tOL0NTTFlRUkNBTGNxek81TSswZz0iLCJpYXQiOjE3MzYzMTk2OTQsImV4cCI6MTczNjkyNDQ5NH0.OdMRRZuzDkXK_Aeolyd3AirfP51ufdDiXkWZItIuxlA; rl_anonymous_id=RudderEncrypt%3AU2FsdGVkX1%2BlCSBgNyJNfin4LsW25p5G%2Fn5uks%2FqszAG82Ph6CtQ3z3wr93ZwqGHlmBJZWqcBl4TMAeaVT7bGA%3D%3D; rl_user_id=RudderEncrypt%3AU2FsdGVkX1%2B%2Bjnm8mMNnf5qtLW7BjN351DgI%2BU1oEC%2BPgollpnYVtxiJeaUFBUqRcQtYifCyy5P1mfYvtQWCtTTISQI%2F22dFYficlhXriZCyufUKUNfXq7eFrJyZgf7h5EXEUdM7XQgEaT9gCb5BXQBanFOFHQcN7jMBBkTQhDw%3D; rl_trait=RudderEncrypt%3AU2FsdGVkX18rLv4cMHGVPi3HGFcwFR%2BhhX8zGnLIQhUEle%2Bz5M%2BVF6AnhhAsqMW1HXCURcaZNLQlF4XC3ls9HaDermIjRIxbfkHwYMJH13XN03opdQhsMq%2BQmUbEmXbBDFVW5k0oz1kpJguzMBeaLg%3D%3D; rl_session=RudderEncrypt%3AU2FsdGVkX1%2FH0GK5vZuTHfMPiB5Ont6649jpqkIGz1nYC99v5h7ZU4qnvBXU19qUHL32ZGwhoMzSAJpMD8VTreHM6X%2B1qFm2MtBa80r3K0VGzDq%2FxPPW4F%2BAN%2BRUxhfozrz2chDqvAWv6pCqlt710Q%3D%3D; ph_phc_4URIAm1uYfJO7j8kWSe0J8lc8IqnstRLS7Jx8NcakHo_posthog=%7B%22distinct_id%22%3A%22484cb91abc553eb0728fba27350d2547e4f79f2e843d0e1c5526197d70397c0a%23bfdd0127-58fb-4157-91ab-4c5248aa272e%22%2C%22%24sesid%22%3A%5B1736321172669%2C%22019444b7-fe5e-7eee-8627-ac22f265f710%22%2C1736319696477%5D%2C%22%24epp%22%3Atrue%2C%22%24initial_person_info%22%3A%7B%22r%22%3A%22%24direct%22%2C%22u%22%3A%22http%3A%2F%2Flocalhost%3A5678%2Fhome%2Fworkflows%22%7D%7D; _streamlit_xsrf=2|c6de634e|9ffd4b3613496bb8eaaa905137daa690|1731648966'}
+=== Error Details ===
+2025-01-12T10:22:14.765Z [USER_ACTION:button_click]
+Details:
+{
+  "buttonText": "Add Item",
+  "buttonId": "add-item-btn",
+  "buttonType": "button",
+  "timestamp": "2025-01-12T10:22:14.765Z"
+}
+----------------------------------------
+
+
+==================================================
+
+
+=== Server Info ===
+Timestamp: 2025-01-12T14:22:26.223242
+Client: 127.0.0.1
+Path: /api/log-error
+Headers: {'Host': 'localhost:8000', 'Connection': 'keep-alive', 'Content-Length': '547', 'sec-ch-ua-platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"', 'DNT': '1', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryIWjyDyAMWlkBLzAT', 'sec-ch-ua-mobile': '?0', 'Accept': '*/*', 'Origin': 'http://localhost:8000', 'Sec-Fetch-Site': 'same-origin', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:8000/kitchen/kitchen.html', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9', 'Cookie': 'ajs_anonymous_id=55423e57-37ba-47d7-acd5-01f110aacf19; rl_page_init_referrer=RudderEncrypt%3AU2FsdGVkX18zYEaLyV6RWj9CczJTEx2hC6fCPUwpMU8%3D; rl_page_init_referring_domain=RudderEncrypt%3AU2FsdGVkX1%2BaNpw%2F0SBsF%2B%2BRlIfSgSpNjcjYD%2BT1xaQ%3D; n8n-auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImJmZGQwMTI3LTU4ZmItNDE1Ny05MWFiLTRjNTI0OGFhMjcyZSIsImhhc2giOiJ6ZWFkMFZGeVBWIiwiYnJvd3NlcklkIjoialBBZUJjWUJ0ZTljUFFzTDJ5ZmNnV0tOL0NTTFlRUkNBTGNxek81TSswZz0iLCJpYXQiOjE3MzYzMTk2OTQsImV4cCI6MTczNjkyNDQ5NH0.OdMRRZuzDkXK_Aeolyd3AirfP51ufdDiXkWZItIuxlA; rl_anonymous_id=RudderEncrypt%3AU2FsdGVkX1%2BlCSBgNyJNfin4LsW25p5G%2Fn5uks%2FqszAG82Ph6CtQ3z3wr93ZwqGHlmBJZWqcBl4TMAeaVT7bGA%3D%3D; rl_user_id=RudderEncrypt%3AU2FsdGVkX1%2B%2Bjnm8mMNnf5qtLW7BjN351DgI%2BU1oEC%2BPgollpnYVtxiJeaUFBUqRcQtYifCyy5P1mfYvtQWCtTTISQI%2F22dFYficlhXriZCyufUKUNfXq7eFrJyZgf7h5EXEUdM7XQgEaT9gCb5BXQBanFOFHQcN7jMBBkTQhDw%3D; rl_trait=RudderEncrypt%3AU2FsdGVkX18rLv4cMHGVPi3HGFcwFR%2BhhX8zGnLIQhUEle%2Bz5M%2BVF6AnhhAsqMW1HXCURcaZNLQlF4XC3ls9HaDermIjRIxbfkHwYMJH13XN03opdQhsMq%2BQmUbEmXbBDFVW5k0oz1kpJguzMBeaLg%3D%3D; rl_session=RudderEncrypt%3AU2FsdGVkX1%2FH0GK5vZuTHfMPiB5Ont6649jpqkIGz1nYC99v5h7ZU4qnvBXU19qUHL32ZGwhoMzSAJpMD8VTreHM6X%2B1qFm2MtBa80r3K0VGzDq%2FxPPW4F%2BAN%2BRUxhfozrz2chDqvAWv6pCqlt710Q%3D%3D; ph_phc_4URIAm1uYfJO7j8kWSe0J8lc8IqnstRLS7Jx8NcakHo_posthog=%7B%22distinct_id%22%3A%22484cb91abc553eb0728fba27350d2547e4f79f2e843d0e1c5526197d70397c0a%23bfdd0127-58fb-4157-91ab-4c5248aa272e%22%2C%22%24sesid%22%3A%5B1736321172669%2C%22019444b7-fe5e-7eee-8627-ac22f265f710%22%2C1736319696477%5D%2C%22%24epp%22%3Atrue%2C%22%24initial_person_info%22%3A%7B%22r%22%3A%22%24direct%22%2C%22u%22%3A%22http%3A%2F%2Flocalhost%3A5678%2Fhome%2Fworkflows%22%7D%7D; _streamlit_xsrf=2|c6de634e|9ffd4b3613496bb8eaaa905137daa690|1731648966'}
+=== Error Details ===
+2025-01-12T10:22:25.910Z [ERROR:handleSampleDataLoad] this.itemManager.loadSampleData is not a function
+Stack Trace:
+TypeError: this.itemManager.loadSampleData is not a function
+    at UIManager.handleSampleDataLoad (http://localhost:8000/js/uiManager.js:396:50)
+    at HTMLButtonElement.<anonymous> (http://localhost:8000/js/uiManager.js:76:68)
+Context: {}
+----------------------------------------
+
+
+==================================================
+
+
+=== Server Info ===
+Timestamp: 2025-01-12T14:22:26.225238
+Client: 127.0.0.1
+Path: /api/log-error
+Headers: {'Host': 'localhost:8000', 'Connection': 'keep-alive', 'Content-Length': '393', 'sec-ch-ua-platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"', 'DNT': '1', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundarywBI8q6e5hOw3n9oA', 'sec-ch-ua-mobile': '?0', 'Accept': '*/*', 'Origin': 'http://localhost:8000', 'Sec-Fetch-Site': 'same-origin', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:8000/kitchen/kitchen.html', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9', 'Cookie': 'ajs_anonymous_id=55423e57-37ba-47d7-acd5-01f110aacf19; rl_page_init_referrer=RudderEncrypt%3AU2FsdGVkX18zYEaLyV6RWj9CczJTEx2hC6fCPUwpMU8%3D; rl_page_init_referring_domain=RudderEncrypt%3AU2FsdGVkX1%2BaNpw%2F0SBsF%2B%2BRlIfSgSpNjcjYD%2BT1xaQ%3D; n8n-auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImJmZGQwMTI3LTU4ZmItNDE1Ny05MWFiLTRjNTI0OGFhMjcyZSIsImhhc2giOiJ6ZWFkMFZGeVBWIiwiYnJvd3NlcklkIjoialBBZUJjWUJ0ZTljUFFzTDJ5ZmNnV0tOL0NTTFlRUkNBTGNxek81TSswZz0iLCJpYXQiOjE3MzYzMTk2OTQsImV4cCI6MTczNjkyNDQ5NH0.OdMRRZuzDkXK_Aeolyd3AirfP51ufdDiXkWZItIuxlA; rl_anonymous_id=RudderEncrypt%3AU2FsdGVkX1%2BlCSBgNyJNfin4LsW25p5G%2Fn5uks%2FqszAG82Ph6CtQ3z3wr93ZwqGHlmBJZWqcBl4TMAeaVT7bGA%3D%3D; rl_user_id=RudderEncrypt%3AU2FsdGVkX1%2B%2Bjnm8mMNnf5qtLW7BjN351DgI%2BU1oEC%2BPgollpnYVtxiJeaUFBUqRcQtYifCyy5P1mfYvtQWCtTTISQI%2F22dFYficlhXriZCyufUKUNfXq7eFrJyZgf7h5EXEUdM7XQgEaT9gCb5BXQBanFOFHQcN7jMBBkTQhDw%3D; rl_trait=RudderEncrypt%3AU2FsdGVkX18rLv4cMHGVPi3HGFcwFR%2BhhX8zGnLIQhUEle%2Bz5M%2BVF6AnhhAsqMW1HXCURcaZNLQlF4XC3ls9HaDermIjRIxbfkHwYMJH13XN03opdQhsMq%2BQmUbEmXbBDFVW5k0oz1kpJguzMBeaLg%3D%3D; rl_session=RudderEncrypt%3AU2FsdGVkX1%2FH0GK5vZuTHfMPiB5Ont6649jpqkIGz1nYC99v5h7ZU4qnvBXU19qUHL32ZGwhoMzSAJpMD8VTreHM6X%2B1qFm2MtBa80r3K0VGzDq%2FxPPW4F%2BAN%2BRUxhfozrz2chDqvAWv6pCqlt710Q%3D%3D; ph_phc_4URIAm1uYfJO7j8kWSe0J8lc8IqnstRLS7Jx8NcakHo_posthog=%7B%22distinct_id%22%3A%22484cb91abc553eb0728fba27350d2547e4f79f2e843d0e1c5526197d70397c0a%23bfdd0127-58fb-4157-91ab-4c5248aa272e%22%2C%22%24sesid%22%3A%5B1736321172669%2C%22019444b7-fe5e-7eee-8627-ac22f265f710%22%2C1736319696477%5D%2C%22%24epp%22%3Atrue%2C%22%24initial_person_info%22%3A%7B%22r%22%3A%22%24direct%22%2C%22u%22%3A%22http%3A%2F%2Flocalhost%3A5678%2Fhome%2Fworkflows%22%7D%7D; _streamlit_xsrf=2|c6de634e|9ffd4b3613496bb8eaaa905137daa690|1731648966'}
+=== Error Details ===
+2025-01-12T10:22:25.911Z [USER_ACTION:button_click]
+Details:
+{
+  "buttonText": "Load Sample Data",
+  "buttonId": "load-sample-btn",
+  "buttonType": "submit",
+  "timestamp": "2025-01-12T10:22:25.911Z"
+}
+----------------------------------------
+
+
+==================================================
+
+
+=== Server Info ===
+Timestamp: 2025-01-12T14:22:30.425438
+Client: 127.0.0.1
+Path: /api/log-error
+Headers: {'Host': 'localhost:8000', 'Connection': 'keep-alive', 'Content-Length': '391', 'sec-ch-ua-platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"', 'DNT': '1', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundary67xmRD6eXFluB6YB', 'sec-ch-ua-mobile': '?0', 'Accept': '*/*', 'Origin': 'http://localhost:8000', 'Sec-Fetch-Site': 'same-origin', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:8000/kitchen/kitchen.html', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9', 'Cookie': 'ajs_anonymous_id=55423e57-37ba-47d7-acd5-01f110aacf19; rl_page_init_referrer=RudderEncrypt%3AU2FsdGVkX18zYEaLyV6RWj9CczJTEx2hC6fCPUwpMU8%3D; rl_page_init_referring_domain=RudderEncrypt%3AU2FsdGVkX1%2BaNpw%2F0SBsF%2B%2BRlIfSgSpNjcjYD%2BT1xaQ%3D; n8n-auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImJmZGQwMTI3LTU4ZmItNDE1Ny05MWFiLTRjNTI0OGFhMjcyZSIsImhhc2giOiJ6ZWFkMFZGeVBWIiwiYnJvd3NlcklkIjoialBBZUJjWUJ0ZTljUFFzTDJ5ZmNnV0tOL0NTTFlRUkNBTGNxek81TSswZz0iLCJpYXQiOjE3MzYzMTk2OTQsImV4cCI6MTczNjkyNDQ5NH0.OdMRRZuzDkXK_Aeolyd3AirfP51ufdDiXkWZItIuxlA; rl_anonymous_id=RudderEncrypt%3AU2FsdGVkX1%2BlCSBgNyJNfin4LsW25p5G%2Fn5uks%2FqszAG82Ph6CtQ3z3wr93ZwqGHlmBJZWqcBl4TMAeaVT7bGA%3D%3D; rl_user_id=RudderEncrypt%3AU2FsdGVkX1%2B%2Bjnm8mMNnf5qtLW7BjN351DgI%2BU1oEC%2BPgollpnYVtxiJeaUFBUqRcQtYifCyy5P1mfYvtQWCtTTISQI%2F22dFYficlhXriZCyufUKUNfXq7eFrJyZgf7h5EXEUdM7XQgEaT9gCb5BXQBanFOFHQcN7jMBBkTQhDw%3D; rl_trait=RudderEncrypt%3AU2FsdGVkX18rLv4cMHGVPi3HGFcwFR%2BhhX8zGnLIQhUEle%2Bz5M%2BVF6AnhhAsqMW1HXCURcaZNLQlF4XC3ls9HaDermIjRIxbfkHwYMJH13XN03opdQhsMq%2BQmUbEmXbBDFVW5k0oz1kpJguzMBeaLg%3D%3D; rl_session=RudderEncrypt%3AU2FsdGVkX1%2FH0GK5vZuTHfMPiB5Ont6649jpqkIGz1nYC99v5h7ZU4qnvBXU19qUHL32ZGwhoMzSAJpMD8VTreHM6X%2B1qFm2MtBa80r3K0VGzDq%2FxPPW4F%2BAN%2BRUxhfozrz2chDqvAWv6pCqlt710Q%3D%3D; ph_phc_4URIAm1uYfJO7j8kWSe0J8lc8IqnstRLS7Jx8NcakHo_posthog=%7B%22distinct_id%22%3A%22484cb91abc553eb0728fba27350d2547e4f79f2e843d0e1c5526197d70397c0a%23bfdd0127-58fb-4157-91ab-4c5248aa272e%22%2C%22%24sesid%22%3A%5B1736321172669%2C%22019444b7-fe5e-7eee-8627-ac22f265f710%22%2C1736319696477%5D%2C%22%24epp%22%3Atrue%2C%22%24initial_person_info%22%3A%7B%22r%22%3A%22%24direct%22%2C%22u%22%3A%22http%3A%2F%2Flocalhost%3A5678%2Fhome%2Fworkflows%22%7D%7D; _streamlit_xsrf=2|c6de634e|9ffd4b3613496bb8eaaa905137daa690|1731648966'}
+=== Error Details ===
+2025-01-12T10:22:30.424Z [USER_ACTION:button_click]
+Details:
+{
+  "buttonText": "View Console Errors",
+  "buttonId": "viewErrors",
+  "buttonType": "submit",
+  "timestamp": "2025-01-12T10:22:30.424Z"
+}
+----------------------------------------
+
+
+==================================================
+
+
+=== Server Info ===
+Timestamp: 2025-01-12T14:22:32.273482
+Client: 127.0.0.1
+Path: /api/log-error
+Headers: {'Host': 'localhost:8000', 'Connection': 'keep-alive', 'Content-Length': '547', 'sec-ch-ua-platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"', 'DNT': '1', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundarybfkoPLO2KSt7MkBz', 'sec-ch-ua-mobile': '?0', 'Accept': '*/*', 'Origin': 'http://localhost:8000', 'Sec-Fetch-Site': 'same-origin', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:8000/kitchen/kitchen.html', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9', 'Cookie': 'ajs_anonymous_id=55423e57-37ba-47d7-acd5-01f110aacf19; rl_page_init_referrer=RudderEncrypt%3AU2FsdGVkX18zYEaLyV6RWj9CczJTEx2hC6fCPUwpMU8%3D; rl_page_init_referring_domain=RudderEncrypt%3AU2FsdGVkX1%2BaNpw%2F0SBsF%2B%2BRlIfSgSpNjcjYD%2BT1xaQ%3D; n8n-auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImJmZGQwMTI3LTU4ZmItNDE1Ny05MWFiLTRjNTI0OGFhMjcyZSIsImhhc2giOiJ6ZWFkMFZGeVBWIiwiYnJvd3NlcklkIjoialBBZUJjWUJ0ZTljUFFzTDJ5ZmNnV0tOL0NTTFlRUkNBTGNxek81TSswZz0iLCJpYXQiOjE3MzYzMTk2OTQsImV4cCI6MTczNjkyNDQ5NH0.OdMRRZuzDkXK_Aeolyd3AirfP51ufdDiXkWZItIuxlA; rl_anonymous_id=RudderEncrypt%3AU2FsdGVkX1%2BlCSBgNyJNfin4LsW25p5G%2Fn5uks%2FqszAG82Ph6CtQ3z3wr93ZwqGHlmBJZWqcBl4TMAeaVT7bGA%3D%3D; rl_user_id=RudderEncrypt%3AU2FsdGVkX1%2B%2Bjnm8mMNnf5qtLW7BjN351DgI%2BU1oEC%2BPgollpnYVtxiJeaUFBUqRcQtYifCyy5P1mfYvtQWCtTTISQI%2F22dFYficlhXriZCyufUKUNfXq7eFrJyZgf7h5EXEUdM7XQgEaT9gCb5BXQBanFOFHQcN7jMBBkTQhDw%3D; rl_trait=RudderEncrypt%3AU2FsdGVkX18rLv4cMHGVPi3HGFcwFR%2BhhX8zGnLIQhUEle%2Bz5M%2BVF6AnhhAsqMW1HXCURcaZNLQlF4XC3ls9HaDermIjRIxbfkHwYMJH13XN03opdQhsMq%2BQmUbEmXbBDFVW5k0oz1kpJguzMBeaLg%3D%3D; rl_session=RudderEncrypt%3AU2FsdGVkX1%2FH0GK5vZuTHfMPiB5Ont6649jpqkIGz1nYC99v5h7ZU4qnvBXU19qUHL32ZGwhoMzSAJpMD8VTreHM6X%2B1qFm2MtBa80r3K0VGzDq%2FxPPW4F%2BAN%2BRUxhfozrz2chDqvAWv6pCqlt710Q%3D%3D; ph_phc_4URIAm1uYfJO7j8kWSe0J8lc8IqnstRLS7Jx8NcakHo_posthog=%7B%22distinct_id%22%3A%22484cb91abc553eb0728fba27350d2547e4f79f2e843d0e1c5526197d70397c0a%23bfdd0127-58fb-4157-91ab-4c5248aa272e%22%2C%22%24sesid%22%3A%5B1736321172669%2C%22019444b7-fe5e-7eee-8627-ac22f265f710%22%2C1736319696477%5D%2C%22%24epp%22%3Atrue%2C%22%24initial_person_info%22%3A%7B%22r%22%3A%22%24direct%22%2C%22u%22%3A%22http%3A%2F%2Flocalhost%3A5678%2Fhome%2Fworkflows%22%7D%7D; _streamlit_xsrf=2|c6de634e|9ffd4b3613496bb8eaaa905137daa690|1731648966'}
+=== Error Details ===
+2025-01-12T10:22:31.966Z [ERROR:handleSampleDataLoad] this.itemManager.loadSampleData is not a function
+Stack Trace:
+TypeError: this.itemManager.loadSampleData is not a function
+    at UIManager.handleSampleDataLoad (http://localhost:8000/js/uiManager.js:396:50)
+    at HTMLButtonElement.<anonymous> (http://localhost:8000/js/uiManager.js:76:68)
+Context: {}
+----------------------------------------
+
+
+==================================================
+
+
+=== Server Info ===
+Timestamp: 2025-01-12T14:22:32.275484
+Client: 127.0.0.1
+Path: /api/log-error
+Headers: {'Host': 'localhost:8000', 'Connection': 'keep-alive', 'Content-Length': '393', 'sec-ch-ua-platform': '"Windows"', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"', 'DNT': '1', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryA8EAeZDtwAmTBUrN', 'sec-ch-ua-mobile': '?0', 'Accept': '*/*', 'Origin': 'http://localhost:8000', 'Sec-Fetch-Site': 'same-origin', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:8000/kitchen/kitchen.html', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9', 'Cookie': 'ajs_anonymous_id=55423e57-37ba-47d7-acd5-01f110aacf19; rl_page_init_referrer=RudderEncrypt%3AU2FsdGVkX18zYEaLyV6RWj9CczJTEx2hC6fCPUwpMU8%3D; rl_page_init_referring_domain=RudderEncrypt%3AU2FsdGVkX1%2BaNpw%2F0SBsF%2B%2BRlIfSgSpNjcjYD%2BT1xaQ%3D; n8n-auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImJmZGQwMTI3LTU4ZmItNDE1Ny05MWFiLTRjNTI0OGFhMjcyZSIsImhhc2giOiJ6ZWFkMFZGeVBWIiwiYnJvd3NlcklkIjoialBBZUJjWUJ0ZTljUFFzTDJ5ZmNnV0tOL0NTTFlRUkNBTGNxek81TSswZz0iLCJpYXQiOjE3MzYzMTk2OTQsImV4cCI6MTczNjkyNDQ5NH0.OdMRRZuzDkXK_Aeolyd3AirfP51ufdDiXkWZItIuxlA; rl_anonymous_id=RudderEncrypt%3AU2FsdGVkX1%2BlCSBgNyJNfin4LsW25p5G%2Fn5uks%2FqszAG82Ph6CtQ3z3wr93ZwqGHlmBJZWqcBl4TMAeaVT7bGA%3D%3D; rl_user_id=RudderEncrypt%3AU2FsdGVkX1%2B%2Bjnm8mMNnf5qtLW7BjN351DgI%2BU1oEC%2BPgollpnYVtxiJeaUFBUqRcQtYifCyy5P1mfYvtQWCtTTISQI%2F22dFYficlhXriZCyufUKUNfXq7eFrJyZgf7h5EXEUdM7XQgEaT9gCb5BXQBanFOFHQcN7jMBBkTQhDw%3D; rl_trait=RudderEncrypt%3AU2FsdGVkX18rLv4cMHGVPi3HGFcwFR%2BhhX8zGnLIQhUEle%2Bz5M%2BVF6AnhhAsqMW1HXCURcaZNLQlF4XC3ls9HaDermIjRIxbfkHwYMJH13XN03opdQhsMq%2BQmUbEmXbBDFVW5k0oz1kpJguzMBeaLg%3D%3D; rl_session=RudderEncrypt%3AU2FsdGVkX1%2FH0GK5vZuTHfMPiB5Ont6649jpqkIGz1nYC99v5h7ZU4qnvBXU19qUHL32ZGwhoMzSAJpMD8VTreHM6X%2B1qFm2MtBa80r3K0VGzDq%2FxPPW4F%2BAN%2BRUxhfozrz2chDqvAWv6pCqlt710Q%3D%3D; ph_phc_4URIAm1uYfJO7j8kWSe0J8lc8IqnstRLS7Jx8NcakHo_posthog=%7B%22distinct_id%22%3A%22484cb91abc553eb0728fba27350d2547e4f79f2e843d0e1c5526197d70397c0a%23bfdd0127-58fb-4157-91ab-4c5248aa272e%22%2C%22%24sesid%22%3A%5B1736321172669%2C%22019444b7-fe5e-7eee-8627-ac22f265f710%22%2C1736319696477%5D%2C%22%24epp%22%3Atrue%2C%22%24initial_person_info%22%3A%7B%22r%22%3A%22%24direct%22%2C%22u%22%3A%22http%3A%2F%2Flocalhost%3A5678%2Fhome%2Fworkflows%22%7D%7D; _streamlit_xsrf=2|c6de634e|9ffd4b3613496bb8eaaa905137daa690|1731648966'}
+=== Error Details ===
+2025-01-12T10:22:31.967Z [USER_ACTION:button_click]
+Details:
+{
+  "buttonText": "Load Sample Data",
+  "buttonId": "load-sample-btn",
+  "buttonType": "submit",
+  "timestamp": "2025-01-12T10:22:31.967Z"
+}
+----------------------------------------
+
+
+==================================================
+

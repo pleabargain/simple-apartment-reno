@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bathroom Renovation</title>
+</head>
+<body>
+    <h1>Bathroom Renovation</h1>
+    <a href="../index.html">Back to Home</a>
+
+    <!-- General Costs Section -->
+    <section id="general-costs">
+        <h2>General Costs</h2>
+        <div>
+            <label>Designer Cost:</label>
+            <input type="number" id="designer-cost" min="0" step="0.01" onchange="calculateTotal()">
+        </div>
+        <div>
+            <label>Demolition Cost:</label>
+            <input type="number" id="demolition-cost" min="0" step="0.01" onchange="calculateTotal()">
+        </div>
+        <div>
+            <label>Materials Cost:</label>
+            <input type="number" id="materials-cost" min="0" step="0.01" onchange="calculateTotal()">
+        </div>
+        <div>
+            <label>Labor Cost:</label>
+            <input type="number" id="labor-cost" min="0" step="0.01" onchange="calculateTotal()">
+        </div>
+    </section>
+
+    <!-- Dynamic Items Section -->
+    <section id="items-section">
+        <h2>Bathroom Items</h2>
+        
+        <!-- Add New Item Form -->
+        <div id="add-item-form">
+            <select id="item-type">
+                <option value="lighting">Lighting</option>
+            </select>
+            <input type="text" id="item-name" placeholder="Name/Model">
+            <input type="text" id="item-description" placeholder="Description">
+            <input type="number" id="item-cost" placeholder="Cost" min="0" step="0.01">
+            <input type="file" id="item-image" accept="image/*">
+            <button onclick="addItem()">Add Item</button>
+        </div>
+
+        <!-- Items Display -->
+        <div id="items-list"></div>
+    </section>
+
+    <!-- Total Cost Display -->
+    <section id="total-cost">
+        <h2>Total Costs</h2>
+        <p>Items Total: $<span id="items-total">0.00</span></p>
+        <p>General Costs Total: $<span id="general-total">0.00</span></p>
+        <p>Grand Total: $<span id="grand-total">0.00</span></p>
+    </section>
+
+    <script>
+        let items = [];
+
+        function addItem() {
+            const type = document.getElementById('item-type').value;
+            const name = document.getElementById('item-name').value;
+            const description = document.getElementById('item-description').value;
+            const cost = parseFloat(document.getElementById('item-cost').value) || 0;
+            const imageInput = document.getElementById('item-image');
+            
+            const item = {
+                id: Date.now(),
+                type,
+                name,
+                description,
+                cost,
+                image: imageInput.files[0] ? URL.createObjectURL(imageInput.files[0]) : null
+            };
+
+            items.push(item);
+            saveToCSV();
+            displayItems();
+            calculateTotal();
+            
+            // Reset form
+            document.getElementById('item-name').value = '';
+            document.getElementById('item-description').value = '';
+            document.getElementById('item-cost').value = '';
+            document.getElementById('item-image').value = '';
+        }
+
+        function deleteItem(id) {
+            items = items.filter(item => item.id !== id);
+            saveToCSV();
+            displayItems();
+            calculateTotal();
+        }
+
+        function editItem(id) {
+            const item = items.find(item => item.id === id);
+            if (!item) return;
+
+            document.getElementById('item-type').value = item.type;
+            document.getElementById('item-name').value = item.name;
+            document.getElementById('item-description').value = item.description;
+            document.getElementById('item-cost').value = item.cost;
+
+            // Remove the old item
+            deleteItem(id);
+        }
+
+        function displayItems() {
+            const container = document.getElementById('items-list');
+            container.innerHTML = '';
+
+            // Group items by type
+            const groupedItems = {};
+            items.forEach(item => {
+                if (!groupedItems[item.type]) {
+                    groupedItems[item.type] = [];
+                }
+                groupedItems[item.type].push(item);
+            });
+
+            // Display grouped items
+            for (const [type, typeItems] of Object.entries(groupedItems)) {
+                const typeSection = document.createElement('div');
+                typeSection.innerHTML = `<h3>${type.charAt(0).toUpperCase() + type.slice(1)}s</h3>`;
+                
+                typeItems.forEach(item => {
+                    const itemDiv = document.createElement('div');
+                    itemDiv.innerHTML = `
+                        <p>Name: ${item.name}</p>
+                        <p>Description: ${item.description}</p>
+                        <p>Cost: $${item.cost.toFixed(2)}</p>
+                        ${item.image ? `<img src="${item.image}" alt="${item.name}" style="max-width: 200px;">` : ''}
+                        <button onclick="editItem(${item.id})">Edit</button>
+                        <button onclick="deleteItem(${item.id})">Delete</button>
+                        <hr>
+                    `;
+                    typeSection.appendChild(itemDiv);
+                });
+                
+                container.appendChild(typeSection);
+            }
+        }
+
+        function calculateTotal() {
+            // Calculate items total
+            const itemsTotal = items.reduce((sum, item) => sum + item.cost, 0);
+            document.getElementById('items-total').textContent = itemsTotal.toFixed(2);
+
+            // Calculate general costs total
+            const designerCost = parseFloat(document.getElementById('designer-cost').value) || 0;
+            const demolitionCost = parseFloat(document.getElementById('demolition-cost').value) || 0;
+            const materialsCost = parseFloat(document.getElementById('materials-cost').value) || 0;
+            const laborCost = parseFloat(document.getElementById('labor-cost').value) || 0;
+            
+            const generalTotal = designerCost + demolitionCost + materialsCost + laborCost;
+            document.getElementById('general-total').textContent = generalTotal.toFixed(2);
+
+            // Calculate grand total
+            const grandTotal = itemsTotal + generalTotal;
+            document.getElementById('grand-total').textContent = grandTotal.toFixed(2);
+        }
+
+        function saveToCSV() {
+            // Convert items array to CSV format
+            const csvContent = items.map(item => 
+                `${item.type},${item.name},${item.description},${item.cost}`
+            ).join('\n');
+
+            // Create a Blob containing the CSV data
+            const blob = new Blob([csvContent], { type: 'text/csv' });
+            const url = URL.createObjectURL(blob);
+
+            // Create a link to download the CSV and trigger it
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'bathroom_items.csv';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        // Initialize display
+        displayItems();
+        calculateTotal();
+    </script>
+</body>
+</html>

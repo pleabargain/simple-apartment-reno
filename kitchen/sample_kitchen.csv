@@ -1,0 +1,9 @@
+type,name,description,cost,url,note,image_path
+countertop,Caesarstone Quartz,Premium white quartz countertop with subtle veining,5500,https://www.caesarstone.com/en-us/color/5151-empira-white/,High durability and stain resistance,images/countertop_sample.jpg
+dishwasher,Bosch 800 Series,Stainless steel dishwasher with 3rd rack,3200,https://www.bosch-home.com/us/productslist/dishwashers/,Energy Star certified,images/dishwasher_sample.jpg
+sink,Kraus Workstation,33-inch undermount single bowl with accessories,1200,https://www.kraususa.com/kitchen/kitchen-sinks.html,Includes cutting board and drying rack,images/sink_sample.jpg
+faucet,Delta Trinsic,Pull-down kitchen faucet in matte black,850,https://www.deltafaucet.com/kitchen/product/9159-bl-dst,Touch2O technology,images/faucet_sample.jpg
+oven,Wolf E Series,30-inch built-in double oven,12000,https://www.subzero-wolf.com/wolf/ovens/e-series,Dual convection system,images/oven_sample.jpg
+range,Viking Professional,36-inch gas rangetop with 6 burners,8500,https://www.vikingrange.com/consumer/category/products/ranges,Professional grade burners,images/range_sample.jpg
+refrigerator,Sub-Zero Classic,42-inch side-by-side with water dispenser,15000,https://www.subzero-wolf.com/sub-zero/full-size-refrigeration,Dual refrigeration system,images/refrigerator_sample.jpg
+microwave,Panasonic NN-SN966S,2.2 cu. ft. countertop microwave,400,https://shop.panasonic.com/microwave-ovens,Inverter technology,images/microwave_sample.jpg
